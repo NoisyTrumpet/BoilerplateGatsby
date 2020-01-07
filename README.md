@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://noisytrumpet.com">
-    <img alt="Noisy Trumpet Digital & Public Relations" width="90" />
+    <img alt="Noisy Trumpet Digital & Public Relations" src="http://2020.thepmgrp.com/images/noisyTrumpet_logo.svg" width="90" />
   </a>
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
