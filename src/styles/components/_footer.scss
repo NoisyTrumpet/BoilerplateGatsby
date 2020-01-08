@@ -1,6 +1,5 @@
-.hero-section {
-    background: rgba(194, 223, 252, 1);
-    text-align: center;
+.footer-section {
+    background-color: #c2dffc;
 
     h1 {
         color: #4599f4;
@@ -14,17 +13,17 @@
         padding: 0;
     }
 
+    h4 {
+       color: #4599f4; 
+    }
+
     p {
         color: #4599f4;
         font-family: 'Helvetica Neue';
-        padding-left: 4rem;
-        padding-right: 4rem;
-        line-height: 1.25rem;
+        line-height: .5rem;
     }
 
-    .tagline {
-        line-height: 1.25rem;
-        padding: 10px 0px 10px 0px;
+    .row {
+        text-align: center;
     }
 }
-

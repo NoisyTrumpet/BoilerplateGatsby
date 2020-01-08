@@ -1,9 +1,33 @@
+const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
+
 module.exports = {
   siteMetadata: {
-    title: `Noisy Trumpet Starter`,
+    title: `DRC`,
     description: `Gatsby React Starter for Internal Development Purposes.`,
     author: `@noisytrumpet`,
   },
+  menuLinks : [
+    {
+      name: 'Background',
+      link: '/background',
+    },
+    {
+      name: 'Regional Impact',
+      link: '/regional-impact',
+    },
+    {
+      name: 'International Impact',
+      link: '/international-impact',
+    },
+    {
+      name: 'Ecological Impact',
+      link: '/ecological-impact',
+    },
+    {
+      name: 'What Can Be Done?',
+      link: '/what-can-be-done',
+    },
+  ],
   plugins: [
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
