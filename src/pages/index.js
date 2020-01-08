@@ -9,9 +9,9 @@ import "../styles/main.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Starter Gatsby Tempalte</h1>
+    <p>For Noisy Trumpet Web Development</p>
+    <p>Essential Dependencies installed.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

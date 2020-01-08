@@ -18,6 +18,20 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /SVG/,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
