@@ -2,6 +2,7 @@
     background-color: white;
 
     h1 {
+        font-family: 'Libre Franklin', sans-serif;
         margin-right: 3rem;
         margin-left: 3rem;
         padding-top: 1rem;
@@ -9,9 +10,15 @@
 
     p {
         color: #4599f4;
-        font-family: 'Helvetica Neue';
+        font-family: 'Montserrat', sans-serif;
         margin-right: 3rem;
         margin-left: 3rem;
+    }
+
+    .international-2 {
+        img {
+            text-align: center;
+        }
     }
 
     .international-quote-section {
@@ -21,6 +28,7 @@
         padding: 8rem;
 
         h3 {
+            font-family: 'Libre Franklin', sans-serif;
             margin: 1rem auto;
         }
     }

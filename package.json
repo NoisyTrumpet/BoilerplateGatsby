@@ -20,6 +20,7 @@
     "gatsby-plugin-sass": "^2.1.26",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-plugin-smoothscroll": "^1.0.4",
     "gatsby-plugin-typography": "^2.3.20",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-sharp": "^2.3.7",
@@ -42,7 +43,7 @@
     "react-typography": "^0.16.19",
     "reactstrap": "^8.0.1",
     "sharp": "^0.22.0",
-    "smooth-scroll": "^16.1.0",
+    "smooth-scroll": "^16.1.1",
     "tween-functions": "^1.2.0",
     "typography": "^0.16.19"
   },

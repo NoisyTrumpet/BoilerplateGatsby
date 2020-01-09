@@ -1,18 +1,33 @@
 .background-section {
     background-color: white;
+
+    h1 {
+        margin-left: 3rem;
+        font-family: 'Libre Franklin', sans-serif;
+    }
     
     p {
         color: #4599f4;
-        font-family: 'Helvetica Neue';
+        font-family: 'Montserrat', sans-serif;
         margin-right: 3rem;
         margin-left: 3rem;
+    }
+
+    .background-2 {
+        text-align: center;
     }
 }
 
 .background-quote-section {
     background-color: #c2dffc;
     color: #4599f4;
-    text-align: center;
     font-style: italic;
     padding: 5rem;
+    width: 100% !important;
+
+    h3 {
+        font-family: 'Libre Franklin', sans-serif;
+        // text-align: center;
+        margin: 2rem auto;
+    }
 }

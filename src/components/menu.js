@@ -33,3 +33,5 @@ const Menu = (props) => {
 //         render={data => <Menu data={data} />}
 //     />
 // );
+
+export default Menu

@@ -1,30 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat&display=swap');
+
+$primary: #4599f4;
+$secondary: #c2dffc;
+$white: #ffffff;
+
+// .container-fluid {
+//     padding: 0 !important;
+//     margin: 0 !important;
+//     width: 100% !important;
+// }
+
 .hero-section {
-    background: rgba(194, 223, 252, 1);
+    background: $secondary;
     text-align: center;
 
     h1 {
-        color: #4599f4;
+        font-family: 'Libre Franklin', sans-serif;
+        color: $primary;
         font-size: 7rem;
     }
 
     h3 {
-        color: white;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 800;
+        color: $white;
         font-size: 2.5rem;
         line-height: 2.75rem;
         padding: 0;
     }
 
     p {
-        color: #4599f4;
-        font-family: 'Helvetica Neue';
-        padding-left: 4rem;
-        padding-right: 4rem;
+        color: $primary;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 20rem;
+        padding-right: 20rem;
         line-height: 1.25rem;
     }
 
     .tagline {
+        font-family: 'Montserrat', sans-serif;
         line-height: 1.25rem;
-        padding: 10px 0px 10px 0px;
+        // padding: 10px 0px 10px 0px;
+        font-weight: 800;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
     }
 }
 

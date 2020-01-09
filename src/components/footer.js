@@ -10,10 +10,10 @@ export default class Footer extends React.Component {
 
     render() {
         return (
-            <div className="footer-section">
+            <div className="footer-section" id="footer">
                 <div className="row">
                     <div className="col-12">
-                        <h1>WATER.</h1>
+                        <h1>Water.</h1>
                         <h3>The Consequences?</h3>
                     </div>
                 </div>

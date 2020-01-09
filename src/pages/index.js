@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import "../styles/main.scss"
 import Header from "../components/header"
 import Background from "../components/background"
@@ -46,11 +47,10 @@ const IndexPage = () => (
   <div>
     <Header />
   <div className="hero-section">
-    <h1>WATER.</h1>
+    <h1>Water.</h1>
     <h3>The Consequences?</h3>
     <p>Join the Devils River Conservancy in supporting smart groundwater use and the creation of river and creek flow standards to ensure water is conserved for future generations of Texans.</p>
     <p className="tagline">Understand what is <br /> happening to your water.</p>
-    {/* <p className="tagline">happening to your water.</p> */}
   </div>
     <Background />
     <RegionalImpacts />

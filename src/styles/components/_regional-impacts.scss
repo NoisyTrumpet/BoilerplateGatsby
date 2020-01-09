@@ -1,10 +1,21 @@
 .regional-impacts-section {
+    padding-top: 1rem;
     background-color: white;
+
+    h1 {
+        margin-left: 3rem;
+        font-family: 'Libre Franklin', sans-serif;
+        justify-items: right !important;
+    }
 
     p {
         color: #4599f4;
-        font-family: 'Helvetica Neue';
+        font-family: 'Montserrat', sans-serif;
         margin-right: 3rem;
         margin-left: 3rem;
+    }
+
+    .regional-1 {
+        text-align: center;
     }
 }
