@@ -20,21 +20,21 @@ const Header = ({ siteTitle }) => (
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
         <span className="navbar-brand">
-          <Link to="#top" className="navbar-brand">
+          <Link to="#top" className="navbar-item">
             DRC
           </Link>
         </span>
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
           <li className="nav-item">
             <span className="nav-link">
-              <Link to="#background" className="navbar-brand">
+              <Link to="#background" className="navbar-item">
                 Background
               </Link>
             </span>
           </li>
           <li className="nav-item">
             <span className="nav-link">
-              <Link to="#regional-impacts" className="navbar-brand">
+              <Link to="#regional-impacts" className="navbar-item">
                 Regional Impact
               </Link>
             </span>
