@@ -1,6 +1,6 @@
 import React from "react"
 import bootstrap from "bootstrap"
-import '../styles/components/_background.scss'
+// import '../scss/components/_background.scss'
 
 export default class Background extends React.Component {
     constructor(props) {

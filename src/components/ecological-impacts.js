@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/components/_ecological-impacts.scss"
+// import "../scss/components/_ecological-impacts.scss"
 import ReactBootstrap from "react-bootstrap"
 
 export default class EcologicalImpacts extends React.Component {
@@ -75,7 +75,7 @@ export default class EcologicalImpacts extends React.Component {
                 Val Verde County if water resources are not properly managed and
                 conserved.
               </p>
-              <img src="https://via.placeholder.com/400/09f/fff.png" />
+              <img src="https://via.placeholder.com/625x350/09f/fff.png" />
             </div>
           </div>
         )

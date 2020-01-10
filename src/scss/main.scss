@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat&display=swap");
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$primary: #4599f4;
+$secondary: #c2dffc;
+$white: #ffffff;
+$font-family-heading: "Libre Franklin", sans-serif;
+$font-family-base: "Montserrat", sans-serif;
+
+// Nav
+
+.navbar.navbar-expand-lg {
+  background-color: linear-gradient(
+    to bottom,
+    rgba(69, 153, 244, 1) 0%,
+    rgba(69, 153, 244, 1) 0%,
+    rgba(194, 223, 252, 1) 100%
+  ) !important;
+
+  .nav-brand {
+    font-family: $font-family-base !important;
+    color: #ffffff !important;
+  }
+
+  .nav-link {
+    font-family: $font-family-base !important;
+    color: #ffffff !important;
+  }
+
+  link {
+    font-family: $font-family-base !important;
+    color: #ffffff !important;
+  }
+}

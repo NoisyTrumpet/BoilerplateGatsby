@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/components/_wcbd.scss"
+// import "../scss/components/_wcbd.scss"
 
 export default class WhatCanBeDone extends React.Component {
     constructor(props) {

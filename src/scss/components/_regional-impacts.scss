@@ -18,4 +18,19 @@
     .regional-1 {
         text-align: center;
     }
+
+    .regional-mobile {
+        display: none;
+    }
+
+        @media screen and (max-width: 414px) {
+
+        .regional-1 {
+            display: none;
+        }
+
+        .regional-mobile {
+            display: inline-block;
+        }
+    }
 }

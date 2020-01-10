@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/components/_international-impacts.scss"
+// import "../scss/components/_international-impacts.scss"
 
 export default class InternationalImpacts extends React.Component {
     constructor(props) {
