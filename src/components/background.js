@@ -1,6 +1,9 @@
 import React from "react"
-import bootstrap from "bootstrap"
-// import '../scss/components/_background.scss'
+import '../scss/style.scss'
+import '../scss/main.scss'
+import "animate.css/animate.min.css"
+import ScrollAnimation from "react-animate-on-scroll"
+import BackgroundOne from "../images/background_1.png"
 
 export default class Background extends React.Component {
     constructor(props) {
@@ -11,26 +14,40 @@ export default class Background extends React.Component {
 
     render () {
         return (
-            <div className="background-section row" id="background">
-                <div className="background-1 col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h1>Background</h1>
-                    <p>White paper effective, correlation, rubric, leverage social enterprise data inspire; inclusive collaborate state of play problem-solvers. Justice, silo families indicators revolutionary academic energize systems thinking ideate. Because; co-creation agile; mobilize technology strategy.</p>
-                    <p>Resist energize venture philanthropy think tank, resist social entrepreneurship ecosystem, innovate activate; social return on investment storytelling do-gooder movements. Venture philanthropy radical efficient catalyze, black lives matter program areas targeted fairness. Compassion energize LGBTQ+ best practices, strengthening infrastructure optimism emerging; resilient empathetic effective corporate social responsibility. Impact justice targeted, optimism dynamic families, thought leader indicators. Milestones thought provoking silo, ecosystem impact her body her rights natural resources living a fully ethical life strengthening infrastructure social entrepreneurship.</p>
-                    <p>Problem-solvers do-gooder transparent milestones leverage fairness. Because move the needle, social innovation disrupt milestones, sustainable to, strategize; policymaker empower, mass incarceration think tank problem-solvers natural resources. Philanthropy; shine efficient, theory of change social return on investment revolutionary benefit corporation contextualize progress communities parse leverage or.</p>
-                    <p>Cultivate the or inclusive, design thinking but global granular communities segmentation incubator policymaker, problem-solvers contextualize. Then game-changer preliminary thinking innovate global thought partnership thought leader. Venture philanthropy, social impact correlation paradigm thought provoking our work, corporate social responsibility benefit corporation society because social innovation transparent strategize.</p>
-                </div>
-
-                <div className="background-2 col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <img src="https://via.placeholder.com/400/c2dffc/808080" />
-                    <img src="https://via.placeholder.com/350/459af4/808080" />                
-                </div>
-
-                <div className="background-quote-section row w-100">
-                    <h3>
-                        "Without water in Val Verde County, what would happen?"
-                    </h3>
-                </div>
+          <div className="background-section row" id="background">
+            <div className="background-1 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <ScrollAnimation animateIn="slideInLeft" delay="1">
+                <h1>Background</h1>
+                <p>
+                  Val Verde County is a diverse and unique region that is home to several independent watersheds including the Devils River, Rio Grande River, Amistad Reservoir, Pecos River and San Felipe Creek. These watersheds are fed by groundwater from the Edward-Trinity Aquifer. Widely considered as abudant and pure, this natural resource has drawn attention from several large companies that look to excessively exploit and export our water for commercial use.
+                </p>
+                <p>
+                  Unfortunately, there is no regulation in Texas for groundwater pumping due to the "Rule of Capture" law. This law allows landowners to pump as much water as they see fit, without any liability for neighboring landowners and communities. As a result, this may deplete the supply of water altogether from our rivers, creeks, and streams.
+                </p>
+                <p>
+                  Without water in Val Verde County, what could happen? Join the Devils River Conservancy in supporting smart groundwater use and the creation of river, creek, and spring flow standards to ensure water is conserved for future generations of Texans.
+                </p>
+                <p>
+                  If we neglect to properly conserve and manage this precious resource it could lead to several detrimental impacts such as...
+                </p>
+              </ScrollAnimation>
             </div>
+
+            <div className="background-2 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <ScrollAnimation animateIn="slideInRight" delay="0">
+                <img
+                  src={BackgroundOne}
+                  alt="" className="background-image-one"
+                />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="slideInRight" delay="10">
+                <img
+                  src="https://via.placeholder.com/350/459af4/808080"
+                  alt="" className="background-image-two"
+                />
+              </ScrollAnimation>
+            </div>
+          </div>
         )
     }
 }

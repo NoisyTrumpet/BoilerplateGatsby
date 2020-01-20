@@ -42,7 +42,7 @@
     "react-tabs": "^3.0.0",
     "react-typography": "^0.16.19",
     "reactstrap": "^8.0.1",
-    "sharp": "^0.22.0",
+    "sharp": "^0.22.1",
     "smooth-scroll": "^16.1.1",
     "tween-functions": "^1.2.0",
     "typography": "^0.16.19"

@@ -1,24 +1,33 @@
-// @import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 
-// Bootstrap
-// @import 'bootstrap/functions';
-// @import 'bootstrap-variables';
-// @import 'bootstrap/variables';
-// @import 'bootstrap/mixins';
-// @import 'bootstrap/root';
-// @import 'bootstrap/reboot';
-// @import 'bootstrap/grid';
-// @import 'bootstrap/type';
-// @import 'bootstrap/tables';
-// @import 'bootstrap/utilities';
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
 
-// Components
-// @import 'components/background';
-// @import 'components/ecological-impacts';
-// @import 'components/footer';
-// @import 'components/header';
-// @import 'components/international-impacts';
-// @import 'components/regional-impacts';
-// @import 'components/wcbd';
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
 
-// @import '../pages/index.js';
+$primary: #98342f;
+$secondary: #57b8cf;
+$black: #000000;
+$font-family-heading: "Lemon/Milk", sans-serif;
+$font-family-sub-heading: "Douglas Rutland Extended", sans-serif;
+$font-family-base: "Crimson Text", serif;
+
+$red: #98342f;
+$aqua: #57b8cf;
+$beige: #e3d6be;
+$dark-blue: #5f5f66;

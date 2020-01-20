@@ -1,53 +1,659 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat&display=swap");
+@import "style.scss";
+@import "../fonts/fonts.css";
 
-@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
-  $min: breakpoint-min($name, $breakpoints);
-  @if $min {
-    @media (min-width: $min) {
-      @content;
+.water-campaign-page {
+
+    navbar {
+        font-family: $font-family-heading !important;
     }
-  } @else {
-    @content;
-  }
+
+    #nav-logo {
+        width: 70%;
+        height: auto;
+        padding: 2px;
+    }
+    
+    .hero-section {
+        text-align: center;
+
+        img {
+            width: 15%;
+            height: auto;
+            margin: 25px auto;
+        }
+
+        .hero-cta {
+            font-family: $font-family-sub-heading;
+            font-size: 1.25rem;
+            padding: 1px 70px 1px 70px;
+            color: $black !important;
+        }
+
+        .tagline {
+            font-family: $font-family-sub-heading !important;
+            color: $beige !important;
+            z-index: 10;
+        }
+    }
+
+    .components {
+
+        h1 {
+            font-family: $font-family-heading;
+            color: $primary;
+        }
+
+        p, li {
+            font-family: $font-family-base;
+            font-size: 1.13rem;
+            color: $dark-blue;
+        }
+
+        .background-section, .regional-impacts-section, .international-impacts-section, .ecological-impact-section, .what-can-be-done {
+            margin: 1rem 3rem 1rem 3rem;
+
+            .background-image-one {
+                position: relative;
+                padding: 40px;
+                text-align: center;
+            }
+
+            .background-image-two {
+                position: absolute;
+                top: -160px;
+                left: 170px;
+                margin-bottom: 1rem;
+            }
+
+            .ecolgocial-quote {
+                font-family: $font-family-base;
+                color: $red;
+            }
+
+            .regional-map-img {
+                text-align: center;
+                position: relative;
+                top: 125px;
+                right: -90px;
+            }
+
+            h5 {
+                font-family: $font-family-base;
+                color: $red;
+                font-style: italic;
+                font-weight: 800;
+            }   
+
+            img {
+                max-width: 450px;
+                max-height: auto;
+                padding: 5px;
+            }
+        }
+
+        .quote-one-section {
+            background-color: $beige;
+            width: 100%;
+            padding: 50px 0 25px 0;
+            margin: 5rem 0 5rem 0;
+            
+            .quote-section {
+                text-align: center;
+
+                h3 {
+                font-family: $font-family-base;
+                font-style: italic;
+                font-weight: 800;
+                text-align: center !important;
+                padding: 0 0 6px 0;
+                }
+            }
+        }
+
+        .quote-two-section {
+            background-color: $beige;
+            width: 100%;
+            padding: 50px 0 25px 0;
+            margin: 7rem 0 5rem 0;
+
+            h3 {
+                font-family: $font-family-base;
+                font-style: italic;
+                font-weight: 800;
+                text-align: center;
+                padding: 0 0 6px 0;
+            }
+        }
+
+        .comanche-springs {
+            margin: 3rem 0 3rem 0;
+
+            h4 {
+                font-family: $font-family-heading;
+                color: $red;
+                text-align: center;
+            }
+
+            h3 {
+                font-family: $font-family-base;
+                font-weight: 600;
+                color: $red;
+            }
+
+            .comanche-quote {
+                color: $red;
+                font-style: italic;
+                font-weight: 800;
+            }
+        }
+
+        .what-can-be-done {
+            margin: 3rem 0 3rem 0;
+
+            h3 {
+                font-family: $font-family-heading;
+            }
+
+            h4 {
+                font-family: $font-family-sub-heading;
+            }
+
+            button {
+                font-family: $font-family-sub-heading;
+                font-size: 1.25rem;
+                background-color: $red;
+                color: white;
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 2px 20px 6px 20px;
+                width: 50%;
+                align-items: bottom;
+
+                &:hover {
+                    background-color: transparent;
+                    border: 2px solid $red;
+                    color: $red;
+                }
+            }
+        }
+
+        .what-can-be-done {
+            text-align: center;
+
+            #legislator-img, #community-img, #advocate-img {
+                max-width: 30%;
+                max-height: auto;
+                padding: 5px;
+            }
+        }
+
+        .footer-section {
+            text-align: center;
+            padding: 10px 0 50px 0;
+
+            img {
+              max-width: 25%;
+              max-height: auto;
+              margin: 2rem auto;
+            }
+
+            h4 {
+                font-family: $font-family-sub-heading;
+            }
+
+            a {
+                font-family: $font-family-base;
+                color: $aqua;
+            }
+        }
+    }
 }
 
-// Grid breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-);
+// Mobile
 
-$primary: #4599f4;
-$secondary: #c2dffc;
-$white: #ffffff;
-$font-family-heading: "Libre Franklin", sans-serif;
-$font-family-base: "Montserrat", sans-serif;
+@media screen and (min-width: 350px) and (max-width: 414px) {
 
-// Nav
+    .water-campaign-page {
 
-.navbar.navbar-expand-lg {
-  background-color: linear-gradient(
-    to bottom,
-    rgba(69, 153, 244, 1) 0%,
-    rgba(69, 153, 244, 1) 0%,
-    rgba(194, 223, 252, 1) 100%
-  ) !important;
+        #nav-logo {
+            width: 40%;
+            height: auto;
+        }
 
-  .nav-brand {
-    font-family: $font-family-base !important;
-    color: #ffffff !important;
-  }
+       .hero-section {
+           img {
+               max-width: 25%;
+           }
 
-  .nav-link {
-    font-family: $font-family-base !important;
-    color: #ffffff !important;
-  }
-
-  link {
-    font-family: $font-family-base !important;
-    color: #ffffff !important;
-  }
+           .components {
+               h1 {
+                   text-align: center !important;
+                   font-size: 2rem;
+               }
+           }
+       }
+    }
 }
+
+// iPad
+
+@media screen and (min-width: 415px) and (max-width: 769px) {
+
+    .water-campaign-page {
+        width: 100% !important;
+
+        .hero-section {
+            padding: 10px 0 20px 0;
+            img {
+                padding-top: 1rem;
+            }
+        }
+    
+        .components {
+            h1 {
+                text-align: center;
+            }
+
+            .regional-mobile {
+                text-align: center;
+                img {
+                    margin: 1px auto !important;
+                }
+            }
+
+            .international-2 {
+                text-align: center;
+                padding-bottom: 2rem;
+            }
+
+            .ecological-impacts-2 {
+                padding-top: 4rem;
+
+                .ecological-mobile {
+                    .ecological-image-one {
+
+                    }
+
+                    .ecological-image-two {
+                        position: relative;
+                    }
+
+                    .ecological-image-three {
+                        position: absolute;
+                        top: 160px;
+                        left: 165px;
+                        z-index: 10;
+                    }
+                }
+            }
+
+            .quote-one-section {
+                margin: 18rem 0 5rem 0 !important;
+            }
+
+            .quote-two-section {
+                margin: 1rem 0 1rem 0 !important;
+            }
+
+            .comanche-springs {
+                margin: 3rem 0 2rem 0 !important;
+
+                h3 {
+                    margin-top: 14rem !important;
+                }
+            }
+
+            .what-can-be-done {
+                #legislator-img, #community-img, #advocate-img {
+                    max-width: 10% !important;
+                    max-height: auto !important;
+                    padding-top: 15px;
+                }
+
+                p {
+                    padding: 0 25px 0 25px;
+                }
+
+                button {
+                    margin-bottom: 1rem;
+                }
+            }
+             
+        }
+
+    }
+
+}
+
+
+// .water-campaign-page {
+//   Navbar.Navbar-expand-lg.navbar-light {
+//   background-color: $primary !important;
+//   font-family: $font-family-heading !important;
+  
+//     .Navbar.Brand {
+//       a {
+//         color: white !important;
+//       }
+//     }
+//   }
+// }
+
+//   p {
+//     color: $black;
+//   } 
+
+//   .hero-section {
+//     text-align: center;
+//     padding: 4rem 0 0 0;
+
+//     img {
+//       width: 25%;
+//       height: auto;
+//     }
+
+//     h1, h3, p {
+//       color: $black;
+//     }
+
+//     h3 {
+//       font-family: $font-family-sub-heading;
+//     }
+
+//     .hero-cta {
+//       padding: 35px 80px 5px 80px;
+//       font-size: 1.25rem;
+//       font-family: $font-family-sub-heading !important;
+//     }
+
+//     .tagline {
+//       font-family: $font-family-sub-heading;
+//     }
+
+//     // .hero-cta {
+//     //   @include media-breakpoint-up(lg) {
+//     //     margin-right: 20px !important;
+//     //   }
+//     //   @include media-breakpoint-up(md) {
+//     //     margin-right: 20px !important;
+//     //   }
+//     //   @include media-breakpoint-up(sm) {
+//     //     margin-right: 20px !important;
+//     //   }
+//     // }
+//   }
+
+//   .components {
+//     .background-1, .background-2, .regional-1, .regional-2, .international-1, .international-2 {
+//       padding: 0 4rem 0 4rem;
+//     }
+//   }
+
+//   .background-section, .ecological-impacts-section, .international-impacts-section, .regional-impacts-section, .comanche-springs, .what-can-be-done {
+//     padding: 20px 1px 20px 1px;
+//   }
+
+//   .background-1, .regional-2, .international-1, .ecological-impacts-2, .comanche-springs, .what-can-be-done, .footer-section {
+
+//       h1, h3, h4 {
+//         font-family: $font-family-heading;
+//         color: $primary;
+//         padding: 15px 15px 5px 15px;
+//       }
+
+//       p {
+//         font-family: $font-family-base;
+//         color: $black;
+//         padding: 5px 15px 5px 15px;
+//       }
+
+//       img {
+//         padding: 5px 5px 1px 5px;
+//         text-align: center;
+//       }
+//   }
+
+//     .background-section, .international-impacts-section {
+//       .quote-section {
+//         width: 100%;
+//         padding: 0;
+//       }
+//     }
+
+//   .international-2 {
+//     img {
+//       text-align: center;
+//       padding: 5px;
+//       margin: 0 auto;
+//     }
+//   }
+
+//   .background-2, .international-2, .regional-1, .ecological-impacts-1 {
+//     text-align: center;
+//     img {
+//       padding: 25px;
+//     }
+
+//     h5 {
+//       padding: 10px 45px 10px 45px;
+//     }
+//   }
+  
+//   .background-section, .international-impacts-section {
+//     .quote-section {
+//       h3 {
+//         width: 100%;
+//         text-align: center !important;
+//         color: $black;
+//         padding: 150px;
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+
+//   .what-can-be-done, .comanche-springs, .footer-section {
+//     text-align: center;
+//     padding-bottom: 15px;
+//   }
+
+//   .what-can-be-done {
+//     button {
+//       border: 1px solid $primary;
+//       border-radius: 5px;
+//       color: $primary;
+//       background: transparent;
+//       padding: 5px 25px 3px 25px;
+//       margin: 4px;
+//       font-family: $font-family-heading;
+//       font-size: 1rem;
+
+//       &:hover {
+//         color: white;
+//         border: 1px solid white;
+//         background-color: $primary;
+//       }
+//     }
+
+//     p {
+//       padding: 1px 30px 1px 30px;
+//     }
+//   }
+
+//   .footer-section {
+
+//     h3 {
+//       color: white;
+//     }
+    
+//     a {
+//       color: $primary;
+
+//       &:hover {
+//         color: white;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+
+// // Mobile phones
+
+// @media screen and (max-width: 414px) {
+//     navbar {
+//         width: 100% !important;
+//     }
+
+//     .hero-section {
+//         .hero-cta {
+//             padding: 2px 5px 2px 5px;
+//             margin: 0 auto !important;
+//         }
+//     }
+
+//     .components {
+//         .background-1, .background-2, .regional-1, .regional-2, .international-1, .international-2 {
+//             padding: 0 10px 0 10px;
+//         }
+//     }
+
+//     .background-1, .regional-2, .international-1, .ecological-impacts-2, .comanche-springs, .what-can-be-done {
+//         h1, p {
+//             margin: 0 auto;
+//         }
+
+//         h1 {
+//             text-align: center;
+//             font-size: 2.25rem;
+//         }
+
+//         h4 {
+//             font-size: 1.25rem;
+//         }
+//     }
+
+//     .background-2, .regional-1, .regional-mobile, .international-2, .ecological-impacts-1, .ecological-impacts-2, .comanche-springs {
+//         img {
+//             max-width: 360px;
+//             max-height: auto;
+//             padding: 5px;
+//             text-align: center;
+//         }
+//     }
+
+//     .what-can-be-done, .footer-section {
+//         text-align: center;
+//         padding-top: 10px;
+
+//         h4 {
+//             padding-top: 5px;
+//         }
+//     }
+
+//     .background-section, .international-impacts-section {
+//         .quote-section {
+//             width: 100%;
+
+//             h3 {
+//                 text-align: center;
+//                 color: white;
+//                 font-size: 1.25rem !important;
+//             }
+//         }
+//     }
+
+//     .footer-section {
+//         width: 100% !important;
+//     }
+// }
+
+// // iPad
+
+// @media screen and (max-width: 769px) {
+
+//   .hero-section {
+//     h1 {
+//       padding-top: 15px;
+//     }
+
+//     .hero-cta {
+//       padding: 2px 10px 2px 10px;
+//     }
+//   }
+
+//   .components {
+//     margin: 0 1rem 0 1rem !important;
+//   }
+
+//   .background-1, .regional-2, .international-1, .ecological-impacts-2, .comanche-springs, .what-can-be-done {
+//     padding-bottom: 20px;
+
+//     h1, p {
+//       padding: 8px 25px 1px 25px !important;
+//     }
+
+//     h1 {
+//       text-align: center;
+//       font-size: 2.25rem;
+//     }
+
+//     h4 {
+//       font-size: 1.25rem;
+//     }
+//   }
+
+//   .background-2, .regional-1, .regional-mobile, .international-2, .ecological-impacts-1, .ecological-impacts-2, .comanche-springs {
+//     img {
+//       max-width: 360px;
+//       height: auto;
+//       padding: 5px;
+//       text-align: center;
+//     }
+//   }
+
+//   .background-section, .international-impacts-section {
+//     .quote-section {
+//       h3 {
+//         width: 100%;
+//         text-align: center;
+//         color: white;
+//         margin: 25px auto;
+//         padding: 40px;
+//         font-size: 1.25px;
+//       }
+//     }
+//   }
+
+//   .comanche-springs, .what-can-be-done, .footer-section {
+//     padding-top: 10px;
+//     text-align: center;
+//   }
+
+//   .what-can-be-done {
+//     button {
+//       padding: 2px 15px 1px 15px;
+//       margin: 4px;
+//       font-size: 1rem;
+//     }
+
+//     p {
+//       // padding: 1px 35px 1px 35px;
+//       margin: 1px 20px 1px 20px;
+//     }
+//   }
+
+//   .ecological-impacts-1 {
+//     h5 {
+//       margin: 10px;
+//       text-align: center;
+//     }
+//   }
+
+//   .footer-section {
+//     color: white;
+
+//     h4 {
+//       padding-top: 5px;
+//     }
+//   }
+  
+// }
