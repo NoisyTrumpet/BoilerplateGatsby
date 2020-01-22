@@ -13,6 +13,7 @@ export default class QuoteTwo extends React.Component {
 
   render() {
     return (
+      <ScrollAnimation animateIn="fadeInUp">
       <div className="quote-two-section w-100">
         <div className="quote-section">
           <h3>
@@ -21,6 +22,7 @@ export default class QuoteTwo extends React.Component {
           </h3>
         </div>
       </div>
+      </ScrollAnimation>
     )
   }
 }

@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Navbar.Brand
+        <Navbar.Brand className="nav-item"
           href="#background"
           style={{
             color: "#98342f",
@@ -32,8 +32,8 @@ const Header = ({ siteTitle }) => (
         >
           Background
         </Navbar.Brand>
-        <Navbar.Brand
-          href="#regional-impacts"
+        <Navbar.Brand className="nav-item"
+          href="#regional-impact"
           style={{
             color: "#98342f",
             fontFamily: "LemonMilk, sans-serif",
@@ -41,8 +41,8 @@ const Header = ({ siteTitle }) => (
         >
           Regional Impact
         </Navbar.Brand>
-        <Navbar.Brand
-          href="#international-impacts"
+        <Navbar.Brand className="nav-item"
+          href="#international-impact"
           style={{
             color: "#98342f",
             fontFamily: "LemonMilk, sans-serif",
@@ -50,8 +50,8 @@ const Header = ({ siteTitle }) => (
         >
           International Impact
         </Navbar.Brand>
-        <Navbar.Brand
-          href="#ecological-impacts"
+        <Navbar.Brand className="nav-item"
+          href="#ecological-impact"
           style={{
             color: "#98342f",
             fontFamily: "LemonMilk, sans-serif",
@@ -59,7 +59,7 @@ const Header = ({ siteTitle }) => (
         >
           Ecological Impact
         </Navbar.Brand>
-        <Navbar.Brand
+        <Navbar.Brand className="nav-item"
           href="#what-can-be-done"
           style={{
             color: "#98342f",

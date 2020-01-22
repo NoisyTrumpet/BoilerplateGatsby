@@ -44,10 +44,9 @@ export default class WhatCanBeDone extends React.Component {
                 <h4>Become an Advocate</h4>
                 <p>
                   To learn more about the Devils River Conservancy and ways to
-                  suport mindful water conservation efforts, please visit{" "}
-                  <a>devilsriverconservancy.org</a>
+                  suport mindful water conservation efforts, please visit devilsriverconservancy.org
                 </p>
-                <button>DRC</button>
+                <a href="https://devilsriverconservancy.org" target="_blank" rel="noreferrer noopener"><button>DRC</button></a>
               </div>
             </div>
           </ScrollAnimation>
