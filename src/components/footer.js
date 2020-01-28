@@ -15,26 +15,26 @@ export default class Footer extends React.Component {
 
     render() {
         return (
-          <div className="footer-section container-fluid" id="footer">
+          <div className="footer-section container-fluid p-0" id="footer">
             <div className="row">
               <div className="col-12">
                 <img src={logoSVG} id="footer-logo" alt="logo" />
               </div>
             </div>
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+            <div className="row footer-body">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-0">
                 <h4>Learn More</h4>
                 <p>
-                  <a href="#">Devils River Conservancy</a>
+                  <a href="https://www.devilsriverconservancy.org/" target="_blank" rel="noopener noreferrer">Devils River Conservancy</a>
                 </p>
                 <p>
-                  <a href="#">Don't Blow It</a>
+                  <a href="https://dontblowittexas.org/" target="_blank" rel="noopener noreferrer">Don't Blow It</a>
                 </p>
                 <p>
                   <a href="#">Membership</a>
                 </p>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-0">
                 <h4>Reach Out</h4>
                 <p>
                   <a href="tel:210-XXX-XXXX">(210)-XXX-XXXX</a>

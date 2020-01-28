@@ -4,7 +4,6 @@ import "../scss/main.scss"
 import ScrollAnimation from "react-animate-on-scroll"
 import EcologicalOne from "../images/ecological_1.png"
 import EcologicalTwo from "../images/ecological_2.png"
-import EcologicalThree from "../images/ecological_3.png"
 
 export default class EcologicalImpact extends React.Component {
     constructor(props) {
@@ -17,48 +16,52 @@ export default class EcologicalImpact extends React.Component {
         return (
           <div className="ecological-impact-section" id="ecological-impact">
             <div className="row">
-              <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+              <div className="ecological-1 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center d-none d-lg-block d-xl-block">
                 <ScrollAnimation animateIn="slideInLeft">
-                <img
-                  src={EcologicalOne} id="ecological-image-one"
-                  alt=""
-                />
-                <img
-                  src={EcologicalTwo} id="ecological-image-two"
-                  alt=""
-                />
-                <p className="ecological-quote">
-                  "The threat of worsening drought, in concert with a potential
-                  boost in groundwater development, could exacerbate the loss of
-                  these aquatic habitats, thereby increasing the rate of species
-                  decline and leading to critical groundwater problems in the
-                  future."
-                </p>
+                  <img src={EcologicalOne} id="ecological-one-img" alt="" />
+                  <img src={EcologicalTwo} id="ecological-two-img" alt="" />
                 </ScrollAnimation>
               </div>
-              <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <h1>Ecological Impact</h1>
-                <p>
-                  Several threatened and endangered aquatic species call Val
-                  Verde County home. These include:
-                </p>
-                <ul>
-                  <li>The Texas Hornshell Mussel</li>
-                  <li>The Devils River Minnow</li>
-                  <li>Proserpine Shiner</li>
-                  <li>Rio Grande Darter</li>
-                  <li>The Conchos Pupfish</li>
-                  <li>Mexican Blindcat</li>
-                </ul>
-                <p>
-                  In accordance with the Endangered Species Act, if we do not 
-                  protect the required environment and water these animals need 
-                  to survive, the federal government could intervene in local 
-                  water management and encroach upon private property rights.
-                </p>
-                <div className="text-center">
-                  <img src={EcologicalThree} className="text-center" id="ecological-image-three" />
+              <div className="ecological-2 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div className="ecological-title text-center">
+                  <h1>Ecological<br /> Impact</h1>
                 </div>
+                <div className="ecological-body">
+                  <p>
+                    Several threatened and endangered aquatic species call Val
+                    Verde County home. These include:
+                </p>
+                  <ul>
+                    <li>The Texas Hornshell Mussel</li>
+                    <li>The Devils River Minnow</li>
+                    <li>Proserpine Shiner</li>
+                    <li>Rio Grande Darter</li>
+                    <li>The Conchos Pupfish</li>
+                    <li>Mexican Blindcat</li>
+                  </ul>
+                  <p>
+                    In accordance with the Endangered Species Act, if we do not
+                    protect the required environment and water these animals need
+                    to survive, the federal government could intervene in local
+                    water management and encroach upon private property rights.
+                </p>
+                  <div className="text-center">
+                    <p className="ecological-quote">
+                      "The threat of worsening drought, in concert with a potential
+                      boost in groundwater development, could exacerbate the loss of
+                      these aquatic habitats, thereby increasing the rate of species
+                      decline and leading to critical groundwater problems in the
+                      future."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="ecological-mobile col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                <ScrollAnimation animateIn="slideInLeft">
+                  <img src={EcologicalOne} id="ecological-one-mobile" alt="" />
+                  <img src={EcologicalTwo} id="ecological-two-mobile" alt="" />
+                </ScrollAnimation>
               </div>
             </div>
 
@@ -85,10 +88,12 @@ export default class EcologicalImpact extends React.Component {
               </div>
               <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center comanche-video">
                 <h3>Comanche Springs Case Study</h3>
-                <img
-                  src="https://via.placeholder.com/600x350/c2dffc/808080"
-                  alt=""
-                />
+                  <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/XkyhB21jPSI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                  </iframe>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@
         background-color: rgba(255, 255, 255, .15);
         backdrop-filter: blur(5px);
 
-        .nav-link {
+        .navlink {
             font-family: $font-family-heading;
             color: $red;
             text-align: center;
@@ -24,7 +24,7 @@
         height: auto;
         padding: 2px;
     }
-    
+
     .hero-section {
         text-align: center;
         background-image: url("../images/watc-bg.png");
@@ -34,7 +34,7 @@
         height: 50%;
         width: 100%;
         padding: 5rem !important;
-        
+
         img {
             width: 40%;
             height: auto;
@@ -42,122 +42,174 @@
         }
 
         .tagline {
-            font-family: $font-family-sub-heading !important;
-            color: black !important;
+            font-family: $font-family-heading !important;
+            color: white;
             padding: 4rem auto !important;
         }
     }
 
     .components {
-
+        
         h1 {
-            font-family: $font-family-sub-heading;
+            font-family: $font-family-heading;
             color: $aqua;
         }
 
         p, li {
             font-family: $font-family-base;
-            font-size: 1.13rem;
             color: $dark-blue;
+            font-size: 1.13rem;
         }
 
         span {
             color: $red;
-            font-weight: 600;
         }
 
-        .background-section, 
-        .regional-impact-section, 
-        .international-impact-section, 
-        .ecological-impact-section, 
-        .what-can-be-done {
-            margin: 1rem 3rem 2rem 3rem !important;
+        .background-title,
+        .international-title,
+        .regional-title,
+        .ecological-title {
+            background-image: url("../images/titleBGThin.png");
+            background-repeat: no-repeat;
+            background-size: 400px auto;
+            background-position: center;
+            padding: 1rem;
+
+            h1 {
+                padding: 4.25rem;
+                text-align: center;
+            }
+        }
+
+        .wcbd-title {
+            background-image: url("../images/titleBGThin.png");
+            background-repeat: no-repeat;
+            background-size: 400px auto;
+            background-position: center;
+            margin: 2rem;
+            padding: 4.6rem;
+        }
+
+        .background-section,
+        .regional-impact-section,
+        .international-impact-section,
+        .ecological-impact-section {
+            margin: 1rem 4rem 2rem 4rem !important;
 
             h5 {
                 font-family: $font-family-base;
                 color: $red;
                 font-style: italic;
                 font-weight: 800;
-            }   
-
-            img {
-                max-width: 450px;
-                max-height: auto;
-                padding: 5px;
             }
 
-            .background-callout {
+            .background-2 {
                 text-align: center;
-                font-weight: 600;
-                color: $red;
+
+                .background-image-one,
+                .background-image-two {
+                    max-width: 500px !important;
+                    max-height: auto;
+                    padding: 5px;
+                }
             }
 
-            .background-image-one {
-                position: relative;
-                padding: 40px;
+            .regional-1 {
                 text-align: center;
+
+                #regional-one-img,
+                #regional-two-img {
+                    max-width: 500px !important;
+                    max-height: auto;
+                    padding: 5px;
+                }
             }
 
-            .background-image-two {
-                position: absolute;
-                top: -160px;
-                left: 170px;
-                margin-bottom: 1rem;
-                padding-bottom: 1rem;
-            }
-
-            .ecological-quote {
-                font-family: $font-family-base;
-                color: $red;
-                padding: 25px 100px 5px 100px;
-                font-size: 1.2rem;
-            }
-
-            .regional-map-img {
+            .international-2 {
                 text-align: center;
-                position: relative;
-                top: 125px;
-                right: -190px;
+                
+                    .international-map-img {
+                        text-align: center !important;
+                        max-width: 600px;
+                        max-height: auto;
+                        // position: relative;
+                        // top: -8rem;
+                    }
             }
 
-            .international-1 {
-                margin-top: -4rem;
+            .ecological-1 {
+                #ecological-one-img,
+                #ecological-two-img {
+                    max-width: 500px !important;
+                    max-height: auto;
+                    padding: 5px;
+                }
             }
 
-            #regional-one-img, 
-            #regional-two-img {
-                max-width: 500px !important;
-                max-height: auto;
+            .ecological-2 {
+                #ecological-three-img {
+                    max-width: 500px !important;
+                    max-height: auto;
+                    padding: 5px;
+                }
+
+                .ecological-quote {
+                    padding: 1rem 3rem 1rem 3rem;
+                    color: $red;
+                    font-style: italic;
+                    font-weight: 800;
+                }
             }
 
-            #ecological-image-one, 
-            #ecological-image-two, 
-            #ecological-image-three {
-                max-width: 450px;
-                max-height: height;
-                text-align: center !important;
+            .comanche-springs {
+                h4 {
+                    text-align: center;
+                    color: $red;
+                    font-family: $font-family-heading;
+                }
+
+                h3 {
+                    font-family: $font-family-large-quote;
+                    color: $red;
+                    font-weight: 600;
+                    padding: .5rem;
+                }
+
+                .comanche-quote {
+                    color: $red;
+                    font-style: italic;
+                    font-weight: 800;
+                    text-align: center;
+                }
+            }
+        }
+
+        .background-section {
+            margin-top: 3rem !important;
+
+            .background-2 {
+                margin-top: 1.5rem !important;
             }
         }
 
         .quote-one-section {
             background-image: url("../images/quote-1-bg.png");
             background-size: cover;
-            font-size: 3rem;
             width: 100%;
             padding: 125px 0 100px 0;
             margin: 7rem 0 5rem 0;
-            
+
             .quote-section {
                 text-align: center;
 
                 h3 {
-                font-family: $font-family-base;
+                font-family: $font-family-large-quote;
                 font-style: italic;
                 font-weight: 800;
-                font-size: 4rem !important;
+                font-size: 3.5rem !important;
                 color: white;
                 text-align: center !important;
-                padding: 0 0 6px 0;
+                padding: 0 15px 6px 15px;
                 text-shadow: 1px 1px rgba(0, 0, 0, .25);
                 }
             }
@@ -168,95 +220,74 @@
             background-size: cover;
             width: 100%;
             padding: 125px 0 100px 0;
-            margin: 7rem 0 5rem 0;
+            margin: 3rem 0 5rem 0;
 
             h3 {
-                font-family: $font-family-base;
+                font-family: $font-family-large-quote;
                 font-style: italic;
                 font-weight: 800;
+                font-size: 3.5rem !important;
                 color: white;
-                text-align: center;
-                padding: 0 0 6px 0;
-            }
-        }
-
-        .comanche-springs {
-            margin: 3rem 0 3rem 0;
-
-            h4 {
-                font-family: $font-family-heading;
-                color: $red;
-                text-align: center;
-            }
-
-            h3 {
-                font-family: $font-family-base;
-                font-weight: 600;
-                color: $red;
-            }
-
-            .comanche-quote {
-                color: $red !important;
-                font-style: italic;
-                font-weight: 800;
+                text-align: center !important;
+                padding: 0 15px 6px 15px;
+                text-shadow: 1px 1px rgba(0, 0, 0, .25);
             }
         }
 
         .what-can-be-done {
-            margin: 3rem 0 3rem 0;
+            margin: 5rem 0 0 0;
 
-            h3 {
-                font-family: $font-family-heading;
-            }
+            .wcbd-title {
+                margin: 0 auto !important;
 
-            h4 {
-                font-family: $font-family-sub-heading;
-                color: $red;
-            }
-
-            button {
-                font-family: $font-family-sub-heading;
-                font-size: 1.25rem;
-                background-color: $aqua;
-                color: white;
-                border: 2px solid white;
-                border-radius: 5px;
-                padding: 2px 20px 6px 20px;
-                width: 50%;
-                align-items: bottom;
-
-                &:hover {
-                    background-color: transparent;
-                    border: 2px solid $aqua;
+                h3 {
+                    font-family: $font-family-heading !important;
                     color: $aqua;
+                    text-align: center;
                 }
             }
 
-            a {
-                color: $red;
+            .wcbd-cta {
+                margin: 5rem 0 0rem 0 !important;
+                text-align: center;
 
-                &:hover {
-                    color: $aqua;
-                    text-decoration: none;
+                h4 {
+                    font-family: $font-family-heading;
+                    color: $red;
                 }
-            }
-        }
 
-        .what-can-be-done {
-            text-align: center;
+                button {
+                    font-family: $font-family-sub-heading;
+                    font-size: 1.25rem;
+                    background-color: $aqua;
+                    color: white;
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    padding: 2px 20px 6px 20px;
+                    width: 50%;
+                    align-items: bottom;
 
-            #legislator-img, 
-            #community-img, 
-            #advocate-img {
-                max-width: 30%;
-                max-height: auto;
-                padding: 5px;
+                    &:hover {
+                        background-color: transparent;
+                        border: 2px solid $aqua;
+                        color: $aqua;
+                    }
+                }
+
+                #legislator-img, 
+                #community-img, 
+                #advocate-img {
+                    height: 12%;
+                    width: auto;
+                    padding: 5px;
+                    margin: 15px;
+                }
             }
         }
 
         .footer-section {
             text-align: center;
-            padding: 10px 0 50px 0;
+            padding: 2rem 0 10rem 0;
             background-color: #3e3843;
 
             h4 {
@@ -274,231 +305,58 @@
                 }
             }
 
-            #footer-logo {
-                max-width: 25%;
-                max-height: auto;
-                margin: 2rem auto;
+            .footer-body {
+                padding-bottom: 4rem;
             }
 
             .social-contact {
-                width: 40%;
+                width: 30%;
                 text-align: center;
                 display: inline-flex;
 
                 .socialIcon {
                     text-align: center;
                     margin: 1.25rem auto;
-                    
                 }
             }
+
+            #footer-logo {
+                max-width: 12%;
+                max-height: auto;
+                margin: 2rem auto;
+            }
         }
+        
     }
 }
 
-// Mobile
+// Mobile phone
 
-@media screen and (min-width: 350px) and (max-width: 414px) {
+@media screen and (min-width: 321px) and (max-width: 414px) {
     .water-campaign-page {
-        nav {
-            float: none;
-            // white-space: nowrap;
-
-            #nav-logo {
-                margin-left: -.75rem;
-            }
-
-            .nav-item {
-                padding: 5px;
-                white-space: wrap;
-            }
-
-            .navbar-toggler-collapsed {
-                padding: -1rem;
-                height: 3px;
-                width: 3px;
-                display: inline-block;
-            }
-
-            .navbar-toggler-icon {
-                fill: $red !important;
-            }
-        }
 
         #nav-logo {
-         width: 40% !important;
+            width: 33% !important;
+            height: auto;
+            padding: 1px;
         }
 
         .hero-section {
-            background-size: cover;
-            height: 35% !important;
+            height: 40% !important;
             width: 100%;
+            padding: 2rem !important;
 
-            #campaign-logo {
-                margin: 5px auto !important;
-                width: 220px;
-                height: auto;
-            }
-
-            .tagline {
-                color: white !important;
-            }
-        }
-
-        .components {
-             h1 {
-                 font-size: 2.5rem;
-                 text-align: center;
-             }
-
-             p {
-                 padding: 1px 5px 1px 5px !important;
-             }
-
-             .background-section,
-             .regional-impact-section,
-             .international-impact-section,
-             .ecological-impact-section,
-             .what-can-be-done {
-                 margin: 10px !important;
-
-                 .background-image-one {
-                     position: relative;
-                     padding: 60px;
-                     left: -100px;
-                 }
-
-                 .background-image-two {
-                     position: absolute;
-                     top: -200px;
-                     left: -10px;
-                     padding: 60px;
-                 }
-
-                 .quote-one-section {
-                     margin: 10px 0 5px 0 !important;
-                     height: 4rem !important;
-                 }
-
-                 .regional-map-img {
-                     text-align: center;
-                     position: relative;
-                     top: -10px;
-                     right: 10px;
-                     padding: 30px;
-                     max-width: 350px;
-                 }
-
-                 #regional-one-mobile,
-                 #ecological-image-one {
-                     position: relative;
-                     max-width: 350px !important;
-                     max-height: auto;
-                     padding: 10px !important;
-                     top: -60px !important;
-                     right: 55px;
-                }
-
-                #regional-two-mobile,
-                #ecological-image-two {
-                     position: relative;
-                     max-width: 350px !important;
-                     max-height: auto;
-                     padding: 10px !important;
-                     top: -120px;
-                     right: -45px;
-                     margin-bottom: -90px !important;
-                }
-
-                #ecological-image-three {
-                    text-align: center;
-                    max-width: 350px;
-                }
-
-                .ecological-quote {
-                    font-style: italic !important;
-                    font-weight: 600;
-                }
-
-                .international-1 {
-                    padding: 0;
-                    margin: -10px 0 -120px 0;
-                }
-
-                .comanche-springs {
-                    h3 {
-                        font-size: 1.5rem;
-                        padding-top: 1rem;
-                    }
-                }
-
-                .what-can-be-done {
-                    padding-bottom: 10px;
-
-                    button {
-                        padding-bottom: 15px !important;
-                    }
-                }
-
-                #legislator-img,
-                #community-img,
-                #advocate-img {
-                     max-width: 20% !important;
-                     height: auto;
-                     padding-top: 15px;
-                }
-            }
-
-            .footer-section {
-                .social-section {
-                    #twitter-icon, 
-                    #facebook-icon, 
-                    #instagram-icon {
-                        max-width: 8% !important;
-                        max-height: auto !important;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// iPad
-
-@media screen and (min-width: 415px) and (max-width: 834px) {
-
-    .water-campaign-page {
-        width: 100% !important;
-
-        #campaign-logo {
-            width: 50% !important;
-            height: auto;
-        }
-
-        #nav-logo {
-            width: 30% !important;
-            height: auto;
-        }
-
-        .hero-section {
-            padding: 10px 0 20px 0;
             img {
-                padding-top: 1rem;
-            }
-
-            .tagline {
-                color: white !important;
+                width: 70%;
+                height: auto;
+                margin: 4rem 0 6rem 0 !important;
             }
         }
-    
+
         .components {
 
             h1 {
-                text-align: center;
-                font-size: 3.25rem;
-            }
-
-            p {
-                 padding: 1px 5px 1px 5px !important;
+                font-size: 1.65rem !important;
             }
 
             .background-section,
@@ -506,136 +364,185 @@
             .international-impact-section,
             .ecological-impact-section,
             .what-can-be-done {
-                margin: 0 5px 0 5px;
+                margin: 1rem 1.5rem 2rem 1.5rem !important;
 
-                .background-image-one {
-                    position: relative;
-                    padding: 10px;
-                }
-
-                .regional-map-img {
-                    position: relative;
-                    top: 110px;
-                    right: -90px;
-                    margin-top: -100px;
-                    padding-bottom: 6rem;
-                    text-align: center;
+                .background-2 {
+                    .background-image-one,
+                    .background-image-two {
+                        max-width: 320px !important;
+                        max-height: auto;
+                    }
                 }
 
                 .regional-mobile {
-                    #regional-one-mobile {
-                        position: relative;
-                        top: 5px;
-                    }
+                    padding: 0 !important;
 
+                    #regional-one-mobile,
                     #regional-two-mobile {
-                        position: relative;
-                        top: -75px;
-                        left: 160px;
+                        max-width: 320px !important;
+                        max-height: auto;
+                        padding: 5px;
                     }
                 }
 
-                .international-1 {
-                    margin-top: -3.5rem;
+                .international-2 {
+                    .international-map-img {
+                        max-width: 320px;
+                        max-height: auto;
+                    }
                 }
 
-                #ecological-image-one {
-                    position: relative;
-                    left: -85px;
-                    z-index: 10;
+                .ecological-mobile {
+                    #ecological-one-mobile,
+                    #ecological-two-mobile {
+                        max-width: 320px !important;
+                        max-height: auto;
+                        padding: 5px;
+                    }
                 }
 
-                #ecological-image-two {
-                    position: relative;
-                    top: -75px;
-                    right: -85px;
+                .comanche-springs {
+                    iframe {
+                        max-width: 330px;
+                        max-height: auto;
+                        padding: 2px !important;
+                    }
                 }
 
-                .ecological-quote {
-                    font-style: italic !important;
-                    font-weight: 600;
-                    margin: -30px 20px 20px 20px;
-                    font-size: 1.55rem;
-                    color: $red;
+                .background-title,
+                .international-title,
+                .regional-title,
+                .ecological-title {
+                    background-image: url("../images/titleBGThin.png");
+                    background-repeat: no-repeat;
+                    background-size: 300px auto;
+                    background-position: center;
+                    padding: 1rem -2rem 1rem -2rem;
+
+                    h1 {
+                        padding: 2.5rem !important;
+                        font-size: 2rem;
+                    }
                 }
 
-                .comanche-video {
-                    padding-bottom: 2rem;
+                .wcbd-title {
+                    background-image: url("../images/titleBGThin.png");
+                    background-repeat: no-repeat;
+                    background-size: 300px auto;
+                    background-position: center;
+                    padding: 1rem -2rem 1rem -2rem;
+                    margin: 0 auto !important;
                 }
+            }
 
-                #legislator-img,
-                #community-img,
-                #advocate-img {
-                     max-width: 15% !important;
-                     max-height: auto;
-                     padding-top: 15px;
+            .quote-one-section,
+            .quote-two-section {
+                margin: 1rem 0 1rem 0 !important;
+
+                .quote-section {
+                    h3 {
+                        font-size: 1.75rem !important;
+                    }
                 }
             }
 
             .footer-section {
-                
-                .social-section {
-                    .row {
-                        margin: 0 105px 0 105px;
-                    }
+                .social-contact {
+                    width: 15% !important;
+                }
 
-                    .social-contact {
-                        width: 25%;
-                    }
+                #footer-logo {
+                    max-width: 50% !important;
                 }
             }
-
-            .quote-one-section {
-                margin: 13rem 0 5rem 0 !important;
-                padding: 115px 40px 100px 40px !important;
-
-                h3 {
-                    font-size: 3.75rem !important;
-                    text-shadow: 1px 1px rgba(0, 0, 0, .25);
-                }
-            }
-
-            .quote-two-section {
-                margin: 2rem 0 2rem 0;
-                padding: 65px 15px 55px 15px;
-
-                h3 {
-                    font-size: 3.75rem !important;
-                    text-shadow: 1px 1px rgba(0, 0, 0, .25);
-                }
-            }
-             
         }
-
     }
-
 }
 
-// iPad Pro
+//iPad / Tablet
 
-@media screen and (min-width: 835px) and (max-width: 1113px) {
+@media screen and (min-width: 415px) and (max-width: 769px) {
     .water-campaign-page {
+
+        #nav-logo {
+            width: 45% !important;
+            height: auto;
+        }
+
         .hero-section {
-            .tagline {
-                font-size: 2rem !important;
+            height: 50% !important;
+            width: 100%;
+            padding: 2rem !important;
+
+            img {
+                width: 50%;
+                height: auto;
+                margin: 4rem 0 6rem 0 !important;
             }
         }
 
         .components {
-            .background-section, 
-            .regional-impact-section, 
-            .international-impact-section, 
-            .ecological-impact-section, 
-            .what-can-be-done {
-                .background-image-one {
-                    // position: relative;
-                    // padding: 30px;
-                }
 
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            .background-section,
+            .regional-impact-section,
+            .ecological-impact-section,
+            .what-can-be-done {
+                margin: .5rem;
+            }
+
+            .background-2 {
+                .background-image-one,
                 .background-image-two {
-                    position: absolute;
-                    top: -100px !important;
-                    left: 320px !important;
+                    max-width: 600px !important;
+                    max-height: auto;
+                }
+            }
+
+            .regional-mobile {
+                padding: 0 !important;
+
+                #regional-one-mobile,
+                #regional-two-mobile {
+                    max-width: 600px !important;
+                    max-height: auto;
+                    padding: 5px;
+                }
+            }
+
+            .international-2 {
+                #international-map-img {
+                    max-width: 500px;
+                    max-height: auto;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .ecological-mobile {
+                margin-bottom: 2rem;
+
+                #ecological-one-mobile,
+                #ecological-two-mobile {
+                    max-width: 500px;
+                    max-height: auto;
+                    padding: 5px;
+                }
+            }
+
+            .what-can-be-done {
+            
+                .wcbd-title {
+                    margin: 1rem auto !important;
+                }
+                .wcbd-cta {
+                    margin: 0 auto !important;
+
+                    p {
+                        padding: 0 2rem 0 2rem;
+                    }
                 }
             }
         }

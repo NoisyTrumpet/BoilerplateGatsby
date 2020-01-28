@@ -1,31 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
-@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
-  $min: breakpoint-min($name, $breakpoints);
-  @if $min {
-    @media (min-width: $min) {
-      @content;
-    }
-  } @else {
-    @content;
-  }
-}
+// @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+//   $min: breakpoint-min($name, $breakpoints);
+//   @if $min {
+//     @media (min-width: $min) {
+//       @content;
+//     }
+//   } @else {
+//     @content;
+//   }
+// }
 
 // Grid breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-) !default;
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+// ) !default;
 
 $primary: #98342f;
 $secondary: #57b8cf;
 $black: #000000;
 $font-family-heading: "Lemon/Milk", sans-serif;
 $font-family-sub-heading: "Douglas Rutland Extended", sans-serif;
-$font-family-base: "Crimson Text", serif;
+$font-family-base: "PT Sans", sans-serif;
+$font-family-large-quote: "Crimson New", serif;
 
 $red: #98342f;
 $aqua: #57b8cf;
