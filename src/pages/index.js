@@ -14,7 +14,9 @@ import EcologicalImpact from "../components/ecological-impact"
 import WCBD from "../components/wcbd"
 import Footer from "../components/footer"
 import "animate.css/animate.min.css"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import logoSVG from "./../images/waterLogo.png"
+import rainDropImg from "./../images/rainDrop.png"
 import QuoteOne from "../components/quote-1"
 import QuoteTwo from "../components/quote-2"
 
@@ -27,6 +29,7 @@ const IndexPage = () => (
         <p className="tagline fadeInUpBig">
           Understand what is <br /> happening to your water.
         </p>
+        <a onClick={() => scrollTo('#background')}><img src={rainDropImg} id="water-drop-img" /></a>
       </div>
       </Container>
       <div className="components">

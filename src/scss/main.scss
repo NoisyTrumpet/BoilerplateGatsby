@@ -7,9 +7,12 @@
     // Navbar - desktop
 
     Nav {
-        background-color: rgba(255, 255, 255, .15) !important;
-        backdrop-filter: blur(5px);
+        background-color: transparent !important;
         z-index: 5;
+
+        .nav-item {
+            margin: 0 2rem;
+        }
 
         .nav-link {
             font-family: $font-family-base !important;
@@ -43,19 +46,24 @@
 
     .hero-section {
         text-align: center;
-        background-image: url("../images/watc-bg.png");
+        background: linear-gradient(90deg, rgba(63,56,68,0.2) 0%, rgba(63,56,68,0.2) 100%), url("../images/watc-bg.png");
+        // background: rgba(63, 56, 68, .2), url("../images/watc-bg.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top center;
+        background-position: center 25%;
         height: 70%;
         width: 100%;
         padding: 5rem !important;
         margin-top: -8rem;
 
-        img {
+        #campaign-logo {
             width: 35%;
             height: auto;
             margin: 4rem 0 10rem 0 !important;
+        }
+
+        #water-drop-img {
+            margin-top: 1rem;
         }
 
         .tagline {
@@ -72,6 +80,7 @@
         h1 {
             font-family: $font-family-heading;
             color: $aqua;
+            text-align: left !important;
         }
 
         p, li {
@@ -90,25 +99,25 @@
         .international-title,
         .regional-title,
         .ecological-title {
-            background-image: url("../images/titleBGThin.png");
-            background-repeat: no-repeat;
-            background-size: 400px auto;
-            background-position: center;
-            padding: 1rem;
+            // background-image: url("../images/titleBGThin.png");
+            // background-repeat: no-repeat;
+            // background-size: 400px auto;
+            // background-position: left;
+            // padding: 4rem;
 
             h1 {
-                padding: 4.25rem;
                 text-align: center;
+                padding-bottom: 1rem;
             }
         }
 
         .wcbd-title {
-            background-image: url("../images/titleBGThin.png");
-            background-repeat: no-repeat;
-            background-size: 400px auto;
-            background-position: center;
-            margin: 2rem;
-            padding: 4.6rem;
+            // background-image: url("../images/titleBGThin.png");
+            // background-repeat: no-repeat;
+            // background-size: 400px auto;
+            // background-position: center;
+            // margin: 2rem;
+            // padding: 4.6rem;
         }
 
         // Component general styling - desktop
@@ -117,7 +126,7 @@
         .regional-impact-section,
         .international-impact-section,
         .ecological-impact-section {
-            margin: 4rem;
+            margin: 4.75rem 4rem 1rem 4rem;
 
             h5 {
                 font-family: $font-family-base;
@@ -187,7 +196,7 @@
         // Quotes/CTAs - desktop
 
         .quote-one-section {
-            background-image: url("../images/quote-1-bg.png");
+            background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(246,41,12,0.55) 0%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 100%), url("../images/quote-1-bg.png");
             background-size: cover;
             background-position: center center !important;
             width: 100%;
@@ -212,7 +221,7 @@
         }
 
         .quote-two-section {
-            background-image: url("../images/quote-2-bg.png");
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(246,41,12,0.55) 0%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 100%), url("../images/quote-2-bg.png");
             background-size: cover;
             background-position: center center !important;
             width: 100%;

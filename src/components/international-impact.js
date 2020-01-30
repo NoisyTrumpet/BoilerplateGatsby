@@ -21,7 +21,7 @@ export default class InternationalImpact extends React.Component {
               <div className="international-1 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <ScrollAnimation animateIn="fadeInLeft">
                   <div className="international-title">
-                    <h1>International<br /> Impact</h1>
+                    <h1>International Impact</h1>
                   </div>
                   <div className="international-body">
                     <p>

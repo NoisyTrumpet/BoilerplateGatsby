@@ -7,38 +7,6 @@ module.exports = {
     author: `@noisytrumpet`,
     siteUrl: `https://watertheconsequences.com`,
   },
-  // menuLinks: [
-  //   {
-  //     name: "Top",
-  //     link: "#top",
-  //     type: `anchor`,
-  //   },
-  //   {
-  //     name: "Background",
-  //     link: "/background",
-  //     type: `anchor`,
-  //   },
-  //   {
-  //     name: "Regional Impact",
-  //     link: "/regional-impact",
-  //     type: `anchor`,
-  //   },
-  //   {
-  //     name: "International Impact",
-  //     link: "/international-impact",
-  //     type: `anchor`,
-  //   },
-  //   {
-  //     name: "Ecological Impact",
-  //     link: "/ecological-impact",
-  //     type: `anchor`,
-  //   },
-  //   {
-  //     name: "What Can Be Done?",
-  //     link: "/what-can-be-done",
-  //     type: `anchor`,
-  //   },
-  // ],
   plugins: [
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-smoothscroll`,

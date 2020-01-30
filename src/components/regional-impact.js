@@ -18,7 +18,7 @@ export default class RegionalImpact extends React.Component {
           <Container fluid={true}>
             <div className="regional-impact-section" id="regional-impact">
               <div className="row">
-                <div className="regional-1 col-xs-12 col-sm-12 col-md-12 col-lg-6 pt-5 mx-auto d-none d-lg-block text-center">
+                <div className="regional-1 col-xs-12 col-sm-12 col-md-12 col-lg-6 mx-auto d-none d-lg-block text-center">
                   <ScrollAnimation animateIn="slideInLeft">
                     <img src={RegionalOne} alt="" id="regional-one-img" />
                     <img src={RegionalTwo} alt="" id="regional-two-img" />
@@ -28,7 +28,7 @@ export default class RegionalImpact extends React.Component {
                 <div className="regional-2 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                   <ScrollAnimation animateIn="slideInRight">
                     <div class="regional-title text-center">
-                      <h1>Regional<br /> Impact</h1>
+                      <h1>Regional Impact</h1>
                     </div>
                     <div class="regional-body">
                       <p>

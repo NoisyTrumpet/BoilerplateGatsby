@@ -10,6 +10,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import "../scss/main.scss"
 import "../scss/style.scss"
 import logoPNG from "./../images/drcLogo.png"
@@ -21,31 +22,28 @@ const Header = (props) => {
 
   return (
     <Headroom>
-      <div style={{
-        backgroundColor: `rgba(255, 255, 255, .15) !important`,
-        backdropFilter: `blur(5px)`
-    }}>
+      <div>
         <Navbar expand="lg">
           <NavbarBrand href="#top">
             <img src={logoPNG} id="nav-logo" />
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
+            <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#background">Background</NavLink>
+                <NavLink onClick={() => scrollTo('#background')}>Background</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#regional-impact">Regional <br/>Impact</NavLink>
+                <NavLink onClick={() => scrollTo('#regional-impact')}>Regional <br/>Impact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#international-impact">International <br/>Impact</NavLink>
+                <NavLink onClick={() => scrollTo('#international-impact')}>International <br/>Impact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#ecological-impact">Ecological <br/>Impact</NavLink>
+                <NavLink onClick={() => scrollTo('#ecological-impact')}>Ecological <br/>Impact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#what-can-be-done">What Can <br/>Be Done?</NavLink>
+                <NavLink onClick={() => scrollTo('#background')}>What Can <br/>Be Done?</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

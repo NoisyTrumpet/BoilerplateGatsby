@@ -25,8 +25,7 @@ export default class EcologicalImpact extends React.Component {
           <div className="ecological-2 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div className="ecological-title text-center">
               <h1>
-                Ecological
-                <br /> Impact
+                Ecological Impact
               </h1>
             </div>
             <div className="ecological-body">
