@@ -17,14 +17,14 @@ export default class WhatCanBeDone extends React.Component {
     render() {
         return (
           <ScrollAnimation animateIn="fadeIn">
-            <div className="what-can-be-done text-center" id="what-can-be-done">
+            <div className="what-can-be-done container-fluid text-center" id="what-can-be-done">
               <div className="row">
-                <div className="wcbd-title col-12">
+                <div className="wcbd-title text-center col-12">
                   <h3>What Can Be Done?</h3>
                 </div>
               </div>
 
-              <div className="row h-25">
+              <div className="row">
                 <div className="wcbd-cta col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                   <img src={legislatorImg} id="legislator-img" />
                   <h4>Contact Your Legislator</h4>

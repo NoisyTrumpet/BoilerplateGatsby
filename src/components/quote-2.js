@@ -17,7 +17,7 @@ export default class QuoteTwo extends React.Component {
       <div className="quote-two-section w-100">
         <div className="quote-section">
           <h3>
-            "If we pump too much water from our aquifers, our rivers and streams
+            "If we pump too much water from our aquifers,<br/> our rivers and streams
             can go dry."
           </h3>
         </div>

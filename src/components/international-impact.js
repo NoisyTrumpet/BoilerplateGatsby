@@ -25,9 +25,12 @@ export default class InternationalImpact extends React.Component {
                   </div>
                   <div className="international-body">
                     <p>
-                      In 1944, the United States established <span>a water treaty</span> with Mexico 
+                      In 1944, the United States established a water treaty with Mexico 
                       that authorizes both countries to operate and maintain dams on the main channel 
-                      of the Rio Grande River. If the reigning "Rule of Capture" law is not modified or 
+                      of the Rio Grande River.
+                    </p>
+                    <p>
+                      If the reigning "Rule of Capture" law is not modified or 
                       monitored, this may lead to an over pumping of water resources, which could then 
                       affect the water levels in Mexico. As a result, 
                       this could incite federal action and regulation for noncompliance of the treaty.
@@ -36,7 +39,7 @@ export default class InternationalImpact extends React.Component {
                 </ScrollAnimation>
               </div>
 
-              <div className="international-2 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="international-2 text-center col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <ScrollAnimation animateIn="slideInRight">
                   <img src={InternationalMap} alt="Map of the Edward & Trinity aquifer"
                     className="international-map-img" id="international-map-img" />

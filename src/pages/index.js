@@ -1,10 +1,11 @@
 import React from "react"
 // import { Link } from "gatsby"
 
-import "bootstrap/dist/css/bootstrap.min.css"
+// import "bootstrap/dist/css/bootstrap.min.css"
 import "../scss/main.scss"
 import "../scss/style.scss"
 import "../scss/pages/_home.scss"
+import { Container } from "reactstrap"
 import Header from "../components/header"
 import Background from "../components/background"
 import RegionalImpact from "../components/regional-impact"
@@ -18,15 +19,17 @@ import QuoteOne from "../components/quote-1"
 import QuoteTwo from "../components/quote-2"
 
 const IndexPage = () => (
-  <div className="water-campaign-page container-fluid px-0">
-    <Header />
-    <div className="hero-section">
-      <img src={logoSVG} id="campaign-logo" alt="logo" />
-      <p className="tagline fadeInUpBig">
-        Understand what is <br /> happening to your water.
-      </p>
-    </div>
-    <div className="components">
+    <div className="water-campaign-page container-fluid px-0">
+    <Container fluid={true} className="px-0">
+      <Header />
+      <div className="hero-section">
+        <img src={logoSVG} id="campaign-logo" alt="logo" />
+        <p className="tagline fadeInUpBig">
+          Understand what is <br /> happening to your water.
+        </p>
+      </div>
+      </Container>
+      <div className="components">
         <Background />
         <QuoteOne />
         <RegionalImpact />
@@ -35,8 +38,8 @@ const IndexPage = () => (
         <EcologicalImpact />
         <WCBD />
         <Footer />
+      </div>
     </div>
-  </div>
 )
 
 export default IndexPage

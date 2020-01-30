@@ -5,6 +5,7 @@ module.exports = {
     title: `DRC`,
     description: `Gatsby React Starter for Internal Development Purposes.`,
     author: `@noisytrumpet`,
+    siteUrl: `https://watertheconsequences.com`,
   },
   // menuLinks: [
   //   {

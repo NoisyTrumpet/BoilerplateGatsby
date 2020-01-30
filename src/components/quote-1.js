@@ -16,7 +16,7 @@ export default class QuoteOne extends React.Component {
       <ScrollAnimation animateIn="fadeInUp">
         <div className="quote-one-section w-100">
           <div className="quote-section">
-            <h3>"Did you know the lower Rio Grande gets about 1/3 of its water from springs located in Val Verde County?"</h3>
+            <h3>"Did you know the lower Rio Grande gets about 1/3 of<br/> its water from springs located in Val Verde County?"</h3>
           </div>
         </div>
       </ScrollAnimation>
