@@ -29,7 +29,7 @@ const IndexPage = () => (
         <p className="tagline fadeInUpBig">
           Understand what is <br /> happening to your water.
         </p>
-        <a onClick={() => scrollTo('#background')}><img src={rainDropImg} id="water-drop-img" /></a>
+        <button><a onClick={() => scrollTo('#background')}><img src={rainDropImg} id="water-drop-img" /></a></button>
       </div>
       </Container>
       <div className="components">

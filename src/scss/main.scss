@@ -14,7 +14,11 @@
     Nav {
         background-color: transparent !important;
         z-index: 5;
-        align-items: center;
+        align-items: center !important;
+
+        .nav-align {
+            align-items: center !important;
+        }
 
         .nav-item {
             margin: 0 2rem;
@@ -68,14 +72,18 @@
             margin: 4rem 0 10rem 0 !important;
         }
 
-        #water-drop-img {
+        button {
             margin-top: 1rem;
+            background: transparent;
+            border: none;
         }
 
         .tagline {
             font-family: $font-family-heading !important;
             color: white;
             padding: 4rem auto !important;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px rgba(0, 0, 0, .25);
         }
     }
 
@@ -339,13 +347,15 @@
             }
 
             .social-contact {
-                width: 30%;
+                width: 13rem;
+                max-width: 100%;
                 text-align: center;
                 display: inline-flex;
 
                 .socialIcon {
                     text-align: center;
                     margin: 1.25rem auto;
+                    max-width: 100%;
                 }
             }
 
@@ -456,7 +466,8 @@
                 #ecological-one-mobile,
                 #ecological-two-mobile {
                     margin: 0 auto !important;
-                    max-width: 320px;
+                    width: 320px;
+                    max-width: 100%;
                     max-height: auto;
                     padding: 5px;
                     text-align: center !important;
@@ -549,18 +560,22 @@
 
 //iPad / Tablet
 
-@media screen and (min-width: 415px) and (max-width: 768px) {
+@media screen and (min-width: 415px) and (max-width: 900px) {
     .water-campaign-page {
 
         // Navbar - tablet
 
         Nav {
 
-            button {
+            // button {
+            //     border: 1px solid $red;
+            //     max-width: 40px;
+            //     height: auto;
+            //     margin: 0;
+            // }
+
+            .navbar-toggler-icon {
                 border: 1px solid $red;
-                max-width: 40px;
-                height: auto;
-                margin: 0;
             }
 
             .navbar-collapse {
@@ -585,7 +600,7 @@
                 font-size: 1rem !important;
             }
 
-            img {
+            #water-logo {
                 width: 50%;
                 height: auto;
                 margin: 6rem 0 6rem 0 !important;
@@ -618,7 +633,8 @@
                 #ecological-one-mobile,
                 #ecological-two-mobile {
                     margin: 0 auto !important;
-                    max-width: 550px;
+                    width: 550px;
+                    max-width: 100%;
                     max-height: auto;
                     padding: 5px;
                     text-align: center !important;
@@ -628,7 +644,7 @@
 
                 .international-map-img {
                     position: relative;
-                    top: 1rem;
+                    top: 1rem !important;
                     max-width: 500px !important;
                     max-height: auto;
                     padding: 10px;
@@ -673,6 +689,38 @@
         }
     }
 }
+
+// // In-between styling
+
+// @media screen and (min-width: 769px) and (max-width: 1023) {
+//     .water-campaign-page {
+//         .components {
+//             .background-section,
+//             .ecological-impact-section,
+//             .regional-impact-section,
+//             .international-impact-section,
+//             .what-can-be-done {
+//                 // Image sizing - inbetween
+
+//                 .ecological-mobile {
+//                     #background-one-img,
+//                     #background-two-img,
+//                     #regional-one-mobile,
+//                     #regional-two-mobile,
+//                     #ecological-one-mobile,
+//                     #ecological-two-mobile {
+//                         margin: 0 auto !important;
+//                         width: 500px;
+//                         max-width: 100% !important;
+//                         max-height: auto;
+//                         padding: 5px;
+//                         text-align: center !important;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // Horizontal tablets
 

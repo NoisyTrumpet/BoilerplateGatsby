@@ -43,7 +43,7 @@ const Header = (props) => {
                 <NavLink onClick={() => scrollTo('#ecological-impact')}>Ecological <br/>Impact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={() => scrollTo('#background')}>What Can <br/>Be Done?</NavLink>
+                <NavLink onClick={() => scrollTo('#what-can-be-done')}>What Can <br/>Be Done?</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
