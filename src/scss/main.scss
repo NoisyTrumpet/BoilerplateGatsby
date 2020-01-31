@@ -3,12 +3,18 @@
 @import "../fonts/fonts.css";
 
 .water-campaign-page {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 
     // Navbar - desktop
 
     Nav {
         background-color: transparent !important;
         z-index: 5;
+        align-items: center;
 
         .nav-item {
             margin: 0 2rem;
@@ -145,8 +151,9 @@
             #ecological-one-img,
             #ecological-two-img {
                 margin: 0 auto !important;
-                max-width: 700px;
-                max-height: auto;
+                width: 700px;
+                max-width: 100%;
+                height: auto;
                 padding: 5px;
             }
 
@@ -155,6 +162,7 @@
             .international-map-img {
                 position: relative;
                 top: -8rem;
+                max-width: 100%;
             }
 
             // Ecological section quote - desktop
@@ -182,6 +190,12 @@
                     color: $red;
                     font-weight: 600;
                     padding: .5rem;
+                }
+
+                .comanche-video {
+                    iframe {
+                        max-width: 100%;
+                    }
                 }
 
                 .comanche-quote {
@@ -212,7 +226,6 @@
                 font-weight: 800;
                 font-size: 2.5rem !important;
                 color: white;
-                // max-width: 75%;
                 text-align: center !important;
                 padding: 0 7rem 1rem 7rem;
                 text-shadow: 1px 1px rgba(0, 0, 0, .25);
