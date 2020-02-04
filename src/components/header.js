@@ -24,10 +24,14 @@ const Header = (props) => {
     <Headroom>
       <div>
         <Navbar expand="lg">
-          <NavbarBrand href="#top">
+          <NavbarBrand className="navbar-brand" href="#top">
             <img src={logoPNG} id="nav-logo" />
           </NavbarBrand>
-          <NavbarToggler onClick={toggle} />
+          <NavbarToggler onClick={toggle} >
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </NavbarToggler>
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

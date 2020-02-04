@@ -49,13 +49,13 @@ export default class Footer extends React.Component {
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 social-section">
                 <h4>Stay Social</h4>
                 <div className="row social-contact">
-                  <div className="social-col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  <div className="social-col col-4">
                     <a href="https://twitter.com/drconservancy?lang=en" target="_blank" rel="noopener noreferrer"><img src={twitterIcon} className="socialIcon" id="twitter-icon" /></a>
                   </div>
-                  <div className="social-col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  <div className="social-col col-4">
                     <a href="https://www.facebook.com/devilsriverconservancy/" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} className="socialIcon" id="facebook-icon" /></a>
                   </div>
-                  <div className="social-col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  <div className="social-col col-4">
                     <a href="https://www.instagram.com/devils_river_conservancy/?hl=en" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} className="socialIcon" id="instagram-icon" /></a>
                   </div>
                 </div>

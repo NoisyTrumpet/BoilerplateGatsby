@@ -16,12 +16,18 @@
         z-index: 5;
         align-items: center !important;
 
+        .navbar-nav {
+            align-items: center;
+            margin: 0 1rem;
+        }
+
         .nav-align {
             align-items: center !important;
         }
 
         .nav-item {
             margin: 0 2rem;
+            transition: ease-in 0.5s;
         }
 
         .nav-link {
@@ -113,25 +119,11 @@
         .international-title,
         .regional-title,
         .ecological-title {
-            // background-image: url("../images/titleBGThin.png");
-            // background-repeat: no-repeat;
-            // background-size: 400px auto;
-            // background-position: left;
-            // padding: 4rem;
 
             h1 {
                 text-align: center;
                 padding-bottom: 1rem;
             }
-        }
-
-        .wcbd-title {
-            // background-image: url("../images/titleBGThin.png");
-            // background-repeat: no-repeat;
-            // background-size: 400px auto;
-            // background-position: center;
-            // margin: 2rem;
-            // padding: 4.6rem;
         }
 
         // Component general styling - desktop
@@ -380,21 +372,43 @@
             height: 4rem;
 
             button {
-                border: 1px solid $red;
-                max-width: 40px;
-                height: auto;
-                margin: 0;
+                padding: 2px;
+
+                div {
+                        width: 35px;
+                        height: 3px;
+                        background-color: $red;
+                        margin: 6px 0;
+                        z-index: 5;
+                    }
             }
 
             .navbar-collapse {
                 background-color: rgba(255, 255, 255, .5) !important;
-                backdrop-filter: blur(5px);
+                backdrop-filter: blur(7px);
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
             }
 
-            #nav-logo {
-                width: 35% !important;
-                height: auto;
-                padding: 1px;
+            .navbar-brand {
+                width: 80% !important;
+                margin: 0 !important;
+
+                img {
+                    width: 100% !important;
+                    max-width: 100%;
+                    height: auto;
+                    padding: 1px;
+                }
+            }
+
+            .nav-item {
+                margin: 1rem 0 1rem 0;
+            }
+
+            .nav-link {
+                color: $red;
             }
         }
 
@@ -405,10 +419,18 @@
             width: 100%;
             padding: 2rem !important;
 
-            img {
-                width: 70%;
+            .tagline {
+                font-size: 1rem;
+            }
+
+            #campaign-logo {
+                width: 80%;
                 height: auto;
-                margin: 7rem 0 6rem 0 !important;
+                margin: 8rem 0 6rem 0 !important;
+            }
+
+            #water-drop-img {
+                width: 55%;
             }
         }
 
@@ -426,25 +448,14 @@
             .international-title,
             .regional-title,
             .ecological-title {
-                background-image: url("../images/titleBGThin.png");
-                background-repeat: no-repeat;
-                background-size: 300px auto;
-                background-position: center;
-                padding: 1rem -2rem 1rem -2rem;
+
+                text-align: justify;
 
                 h1 {
-                    padding: 2.5rem !important;
+                    padding-top: 1rem;
                     font-size: 2rem;
+                    text-align: center;
                 }
-            }
-
-            .wcbd-title {
-                background-image: url("../images/titleBGThin.png");
-                background-repeat: no-repeat;
-                background-size: 300px auto;
-                background-position: center;
-                padding: 1rem -2rem 1rem -2rem;
-                margin: 0 auto !important;
             }
 
             // Component general styling - mobile
@@ -514,7 +525,7 @@
 
                 .quote-section {
                     h3 {
-                        font-size: 1.75rem !important;
+                        font-size: 1.5rem !important;
                         padding: 1rem;
                     }
                 }
@@ -547,7 +558,7 @@
                 }
 
                 .social-contact {
-                    width: 15% !important;
+                    width: 55% !important;
                 }
 
                 #footer-logo {
