@@ -3,702 +3,712 @@
 @import "../fonts/fonts.css";
 
 .water-campaign-page {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 
-    // Navbar - desktop
+  // Navbar - desktop
 
-    Nav {
-        background-color: transparent !important;
-        z-index: 5;
-        align-items: center !important;
+  nav {
+    background-color: transparent !important;
+    z-index: 5;
+    align-items: center !important;
 
-        .navbar-nav {
-            align-items: center;
-            margin: 0 1rem;
-        }
-
-        .nav-align {
-            align-items: center !important;
-        }
-
-        .nav-item {
-            margin: 0 2rem;
-            transition: ease-in 0.5s;
-        }
-
-        .nav-link {
-            font-family: $font-family-base !important;
-            font-weight: 600;
-            color: white;
-            text-align: center;
-            padding: 0 13px 0 13px !important;
-
-            &:hover {
-                color: $red;
-            }
-        }
-
-        #nav-logo {
-            width: 50% !important;
-            height: auto;
-            padding: 2px;
-        }
+    .navbar-nav {
+      align-items: center;
+      margin: 0 1rem;
     }
 
-    .headroom--scrolled {
-        background: rgb(255, 255, 255);
+    .nav-align {
+      align-items: center !important;
+    }
+
+    .nav-item {
+      margin: 0 2rem;
+      transition: ease-in 0.5s;
+    }
+
+    .nav-link {
+      font-family: $font-family-base !important;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      padding: 0 13px 0 13px !important;
+
+      &:hover {
         color: $red;
-
-        .nav-link {
-            color: $red;
-        }
+      }
     }
 
-    // Hero section - desktop
+    #nav-logo {
+      width: 50% !important;
+      height: auto;
+      padding: 2px;
+    }
+  }
 
-    .hero-section {
+  .headroom--scrolled {
+    background: rgb(255, 255, 255);
+    color: $red;
+
+    .nav-link {
+      color: $red;
+    }
+  }
+
+  // Hero section - desktop
+
+  .hero-section {
+    text-align: center;
+    background: linear-gradient(
+        90deg,
+        rgba(63, 56, 68, 0.2) 0%,
+        rgba(63, 56, 68, 0.2) 100%
+      ),
+      url("../images/watc-bg.png");
+    // background: rgba(63, 56, 68, .2), url("../images/watc-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 25%;
+    height: 70%;
+    width: 100%;
+    padding: 5rem !important;
+    margin-top: -8rem;
+
+    #campaign-logo {
+      width: 35%;
+      height: auto;
+      margin: 4rem 0 10rem 0 !important;
+    }
+
+    button {
+      margin-top: 1rem;
+      background: transparent;
+      border: none;
+    }
+
+    .tagline {
+      font-family: $font-family-heading !important;
+      color: white;
+      padding: 4rem auto !important;
+      font-size: 1.5rem;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - desktop
+
+  .components {
+    h1 {
+      font-family: $font-family-heading;
+      color: $aqua;
+      text-align: left !important;
+    }
+
+    p,
+    li {
+      font-family: $font-family-base;
+      color: $dark-blue;
+      font-size: 1.25rem;
+    }
+
+    span {
+      color: $red;
+    }
+
+    // H1 background styling - desktop
+
+    .background-title,
+    .international-title,
+    .regional-title,
+    .ecological-title {
+      h1 {
         text-align: center;
-        background: linear-gradient(90deg, rgba(63,56,68,0.2) 0%, rgba(63,56,68,0.2) 100%), url("../images/watc-bg.png");
-        // background: rgba(63, 56, 68, .2), url("../images/watc-bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 25%;
-        height: 70%;
-        width: 100%;
-        padding: 5rem !important;
-        margin-top: -8rem;
+        padding-bottom: 1rem;
+      }
+    }
 
-        #campaign-logo {
-            width: 35%;
-            height: auto;
-            margin: 4rem 0 10rem 0 !important;
+    // Component general styling - desktop
+
+    .background-section,
+    .regional-impact-section,
+    .international-impact-section,
+    .ecological-impact-section {
+      margin: 4.75rem 4rem 1rem 4rem;
+
+      h5 {
+        font-family: $font-family-base;
+        color: $red;
+        font-style: italic;
+        font-weight: 800;
+      }
+
+      // Image sizing - desktop
+
+      #background-one-img,
+      #background-two-img,
+      #regional-one-img,
+      #regional-two-img,
+      #international-map-img,
+      #ecological-one-img,
+      #ecological-two-img {
+        margin: 0 auto !important;
+        width: 700px;
+        max-width: 100%;
+        height: auto;
+        padding: 5px;
+      }
+
+      // International map positioning - desktop
+
+      .international-map-img {
+        position: relative;
+        top: -8rem;
+        max-width: 100%;
+      }
+
+      // Ecological section quote - desktop
+
+      .ecological-quote {
+        padding: 1rem 3rem 1rem 3rem;
+        color: $red;
+        font-style: italic;
+        font-weight: 800;
+      }
+
+      // Comanche Springs section - desktop
+
+      .comanche-springs {
+        margin-top: 30px;
+
+        h4 {
+          text-align: center;
+          color: $red;
+          font-family: $font-family-heading;
+        }
+
+        h3 {
+          font-family: $font-family-large-quote;
+          color: $red;
+          font-weight: 600;
+          padding: 0.5rem;
+        }
+
+        .comanche-video {
+          iframe {
+            max-width: 100%;
+          }
+        }
+
+        .comanche-quote {
+          color: $red;
+          font-style: italic;
+          font-weight: 800;
+          text-align: center;
+        }
+      }
+    }
+
+    // Quotes/CTAs - desktop
+
+    .quote-one-section {
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.55) 0%,
+          rgba(246, 41, 12, 0.55) 0%,
+          rgba(0, 0, 0, 0.55) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("../images/quote-1.png");
+      background-size: cover;
+      background-position: center center !important;
+      width: 100%;
+      padding: 125px 0 100px 0;
+      margin: 1rem 0 -3rem 0;
+
+      .quote-section {
+        text-align: center;
+
+        h3 {
+          font-family: $font-family-large-quote;
+          font-style: italic;
+          font-weight: 800;
+          font-size: 2.5rem !important;
+          color: white;
+          text-align: center !important;
+          padding: 0 7rem 1rem 7rem;
+          text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+
+    .quote-two-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.55) 0%,
+          rgba(246, 41, 12, 0.55) 0%,
+          rgba(0, 0, 0, 0.55) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("../images/quote-2.png");
+      background-size: cover;
+      background-position: center center !important;
+      width: 100%;
+      padding: 125px 0 100px 0;
+      margin: 1rem 0 0.5rem 0;
+
+      h3 {
+        font-family: $font-family-large-quote;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 2.5rem !important;
+        color: white;
+        text-align: center !important;
+        padding: 0 105px 6px 105px;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    // What Can Be Done? section - desktop
+
+    .what-can-be-done {
+      margin: 3rem 0 8rem 0;
+
+      .wcbd-title {
+        margin: 0 auto !important;
+
+        h3 {
+          font-family: $font-family-heading !important;
+          color: $aqua;
+          text-align: center;
+        }
+      }
+
+      .wcbd-cta {
+        margin: 5rem 0 0 0 !important;
+        text-align: center;
+
+        h4 {
+          font-family: $font-family-heading;
+          color: $red;
+          font-size: 1.75rem;
+        }
+
+        p {
+          font-size: 1rem;
+          padding: 0.25rem 4rem 0.25rem 4rem;
         }
 
         button {
-            margin-top: 1rem;
-            background: transparent;
-            border: none;
-        }
+          font-family: $font-family-sub-heading;
+          font-size: 1.25rem;
+          background-color: $aqua;
+          color: white;
+          border: 2px solid white;
+          border-radius: 5px;
+          padding: 2px 20px 6px 20px;
+          width: 50%;
+          align-items: bottom;
 
-        .tagline {
-            font-family: $font-family-heading !important;
-            color: white;
-            padding: 4rem auto !important;
-            font-size: 1.5rem;
-            text-shadow: 1px 1px rgba(0, 0, 0, .25);
-        }
-    }
-
-    // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - desktop
-
-    .components {
-        
-        h1 {
-            font-family: $font-family-heading;
+          &:hover {
+            background-color: transparent;
+            border: 2px solid $aqua;
             color: $aqua;
-            text-align: left !important;
+          }
         }
 
-        p, li {
-            font-family: $font-family-base;
-            color: $dark-blue;
-            font-size: 1.25rem;
+        #legislator-img,
+        #community-img,
+        #advocate-img {
+          height: 8rem;
+          width: auto;
+          padding: 5px;
+          margin: 15px;
         }
-
-        span {
-            color: $red;
-        }
-
-        // H1 background styling - desktop
-
-        .background-title,
-        .international-title,
-        .regional-title,
-        .ecological-title {
-
-            h1 {
-                text-align: center;
-                padding-bottom: 1rem;
-            }
-        }
-
-        // Component general styling - desktop
-
-        .background-section,
-        .regional-impact-section,
-        .international-impact-section,
-        .ecological-impact-section {
-            margin: 4.75rem 4rem 1rem 4rem;
-
-            h5 {
-                font-family: $font-family-base;
-                color: $red;
-                font-style: italic;
-                font-weight: 800;
-            }
-
-            // Image sizing - desktop
-
-            #background-one-img,
-            #background-two-img,
-            #regional-one-img,
-            #regional-two-img,
-            #international-map-img,
-            #ecological-one-img,
-            #ecological-two-img {
-                margin: 0 auto !important;
-                width: 700px;
-                max-width: 100%;
-                height: auto;
-                padding: 5px;
-            }
-
-            // International map positioning - desktop
-
-            .international-map-img {
-                position: relative;
-                top: -8rem;
-                max-width: 100%;
-            }
-
-            // Ecological section quote - desktop
-
-            .ecological-quote {
-                padding: 1rem 3rem 1rem 3rem;
-                color: $red;
-                font-style: italic;
-                font-weight: 800;
-            }
-
-            // Comanche Springs section - desktop
-
-            .comanche-springs {
-                margin-top: 30px;
-
-                h4 {
-                    text-align: center;
-                    color: $red;
-                    font-family: $font-family-heading;
-                }
-
-                h3 {
-                    font-family: $font-family-large-quote;
-                    color: $red;
-                    font-weight: 600;
-                    padding: .5rem;
-                }
-
-                .comanche-video {
-                    iframe {
-                        max-width: 100%;
-                    }
-                }
-
-                .comanche-quote {
-                    color: $red;
-                    font-style: italic;
-                    font-weight: 800;
-                    text-align: center;
-                }
-            }
-        }
-
-        // Quotes/CTAs - desktop
-
-        .quote-one-section {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(246,41,12,0.55) 0%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 100%), url("../images/quote-1-bg.png");
-            background-size: cover;
-            background-position: center center !important;
-            width: 100%;
-            padding: 125px 0 100px 0;
-            margin: 1rem 0 -3rem 0;
-
-            .quote-section {
-                text-align: center;
-
-                h3 {
-                font-family: $font-family-large-quote;
-                font-style: italic;
-                font-weight: 800;
-                font-size: 2.5rem !important;
-                color: white;
-                text-align: center !important;
-                padding: 0 7rem 1rem 7rem;
-                text-shadow: 1px 1px rgba(0, 0, 0, .25);
-                }
-            }
-        }
-
-        .quote-two-section {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(246,41,12,0.55) 0%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 100%), url("../images/quote-2-bg.png");
-            background-size: cover;
-            background-position: center center !important;
-            width: 100%;
-            padding: 125px 0 100px 0;
-            margin: 1rem 0 .5rem 0;
-
-            h3 {
-                font-family: $font-family-large-quote;
-                font-style: italic;
-                font-weight: 800;
-                font-size: 2.5rem !important;
-                color: white;
-                text-align: center !important;
-                padding: 0 105px 6px 105px;
-                text-shadow: 1px 1px rgba(0, 0, 0, .25);
-            }
-        }
-
-        // What Can Be Done? section - desktop
-
-        .what-can-be-done {
-            margin: 3rem 0 8rem 0;
-
-            .wcbd-title {
-                margin: 0 auto !important;
-
-                h3 {
-                    font-family: $font-family-heading !important;
-                    color: $aqua;
-                    text-align: center;
-                }
-            }
-
-            .wcbd-cta {
-                margin: 5rem 0 0 0 !important;
-                text-align: center;
-
-                h4 {
-                    font-family: $font-family-heading;
-                    color: $red;
-                    font-size: 1.75rem;
-                }
-
-                p {
-                    font-size: 1rem;
-                    padding: .25rem 4rem .25rem 4rem;
-                }
-
-                button {
-                    font-family: $font-family-sub-heading;
-                    font-size: 1.25rem;
-                    background-color: $aqua;
-                    color: white;
-                    border: 2px solid white;
-                    border-radius: 5px;
-                    padding: 2px 20px 6px 20px;
-                    width: 50%;
-                    align-items: bottom;
-
-                    &:hover {
-                        background-color: transparent;
-                        border: 2px solid $aqua;
-                        color: $aqua;
-                    }
-                }
-
-                #legislator-img, 
-                #community-img, 
-                #advocate-img {
-                    height: 8rem;
-                    width: auto;
-                    padding: 5px;
-                    margin: 15px;
-                }
-            }
-        }
-
-        // Footer section - desktop
-
-        .footer-section {
-            text-align: center;
-            padding: 2rem 0 10rem 0;
-            background-color: #3e3843;
-
-            h4 {
-                font-family: $font-family-heading;
-                color: $aqua;
-            }
-
-            a {
-                font-family: $font-family-base;
-                color: white;
-
-                &:hover {
-                    color: $aqua;
-                    text-decoration: none;
-                }
-            }
-
-            .footer-body {
-                padding-bottom: 4rem;
-            }
-
-            .social-contact {
-                width: 13rem;
-                max-width: 100%;
-                text-align: center;
-                display: inline-flex;
-
-                .socialIcon {
-                    text-align: center;
-                    margin: 1.25rem auto;
-                    max-width: 100%;
-                }
-            }
-
-            #footer-logo {
-                max-width: 12%;
-                max-height: auto;
-                margin: 2rem auto;
-            }
-        }
-        
+      }
     }
+
+    // Footer section - desktop
+
+    .footer-section {
+      text-align: center;
+      padding: 2rem 0 10rem 0;
+      background-color: #3e3843;
+
+      h4 {
+        font-family: $font-family-heading;
+        color: $aqua;
+      }
+
+      a {
+        font-family: $font-family-base;
+        color: white;
+
+        &:hover {
+          color: $aqua;
+          text-decoration: none;
+        }
+      }
+
+      .footer-body {
+        padding-bottom: 4rem;
+      }
+
+      .social-contact {
+        width: 13rem;
+        max-width: 100%;
+        text-align: center;
+        display: inline-flex;
+
+        .socialIcon {
+          text-align: center;
+          margin: 1.25rem auto;
+          max-width: 100%;
+        }
+      }
+
+      #footer-logo {
+        max-width: 12%;
+        max-height: auto;
+        margin: 2rem auto;
+      }
+    }
+  }
 }
 
 // Mobile phone
 
 @media screen and (min-width: 321px) and (max-width: 414px) {
-    .water-campaign-page {
+  .water-campaign-page {
+    // Navbar - mobile
 
-        // Navbar - mobile
+    nav {
+      height: 4rem;
 
-        Nav {
-            height: 4rem;
+      button {
+        padding: 2px;
 
-            button {
-                padding: 2px;
-
-                div {
-                        width: 35px;
-                        height: 3px;
-                        background-color: $red;
-                        margin: 6px 0;
-                        z-index: 5;
-                    }
-            }
-
-            .navbar-collapse {
-                background-color: rgba(255, 255, 255, .5) !important;
-                backdrop-filter: blur(7px);
-                max-width: 100% !important;
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-
-            .navbar-brand {
-                width: 80% !important;
-                margin: 0 !important;
-
-                img {
-                    width: 100% !important;
-                    max-width: 100%;
-                    height: auto;
-                    padding: 1px;
-                }
-            }
-
-            .nav-item {
-                margin: 1rem 0 1rem 0;
-            }
-
-            .nav-link {
-                color: $red;
-            }
+        div {
+          width: 35px;
+          height: 3px;
+          background-color: $red;
+          margin: 6px 0;
+          z-index: 5;
         }
+      }
 
-        // Hero section - mobile
+      .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+        backdrop-filter: blur(7px);
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
 
-        .hero-section {
-            height: 40% !important;
-            width: 100%;
-            padding: 2rem !important;
+      .navbar-brand {
+        width: 80% !important;
+        margin: 0 !important;
 
-            .tagline {
-                font-size: 1rem;
-            }
-
-            #campaign-logo {
-                width: 80%;
-                height: auto;
-                margin: 8rem 0 6rem 0 !important;
-            }
-
-            #water-drop-img {
-                width: 55%;
-            }
+        img {
+          width: 100% !important;
+          max-width: 100%;
+          height: auto;
+          padding: 1px;
         }
+      }
 
-        // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - mobile
+      .nav-item {
+        margin: 1rem 0 1rem 0;
+      }
 
-        .components {
-
-            h1 {
-                font-size: 1.65rem !important;
-            }
-
-            // H1 background styling - mobile
-
-            .background-title,
-            .international-title,
-            .regional-title,
-            .ecological-title {
-
-                text-align: justify;
-
-                h1 {
-                    padding-top: 1rem;
-                    font-size: 2rem;
-                    text-align: center;
-                }
-            }
-
-            // Component general styling - mobile
-
-            .background-section,
-            .regional-impact-section,
-            .international-impact-section,
-            .ecological-impact-section,
-            .what-can-be-done {
-                margin: 1rem 1.5rem 2rem 1.5rem !important;
-
-                // Image sizing - desktop
-
-                #background-one-img,
-                #background-two-img,
-                #regional-one-mobile,
-                #regional-two-mobile,
-                #international-map-img,
-                #ecological-one-mobile,
-                #ecological-two-mobile {
-                    margin: 0 auto !important;
-                    width: 320px;
-                    max-width: 100%;
-                    max-height: auto;
-                    padding: 5px;
-                    text-align: center !important;
-                }
-
-                // International map positioning - mobile
-
-                .international-map-img {
-                    position: relative;
-                    top: -0.25rem;
-                }
-
-                // Ecological section quote - desktop
-
-                .ecological-quote {
-                    padding: 1rem;
-                }
-
-                // Component spacing - mobile
-
-                .background-2,
-                .regional-2,
-                .regional-mobile {
-                    padding: 0 !important;
-                }
-
-                // Comanche Springs video - mobile
-
-                .comanche-springs {
-                    iframe {
-                        max-width: 330px;
-                        max-height: auto;
-                        padding: 2px !important;
-                    }
-                }
-            }
-
-            // Quotes/CTAs - mobile
-
-            .quote-one-section,
-            .quote-two-section {
-                margin: 1rem 0 1rem 0 !important;
-                padding: 1rem;
-
-                .quote-section {
-                    h3 {
-                        font-size: 1.5rem !important;
-                        padding: 1rem;
-                    }
-                }
-            }
-
-            // What Can Be Done? section - mobile
-
-            .what-can-be-done {
-                margin: .5rem !important;
-                
-                .wcbd-title {
-                    padding: 50px;
-
-                    h3 {
-                        font-size: 1.95rem;
-                    }
-                }
-
-                .wcbd-cta {
-                    margin: 1rem 0 1rem 0 !important;
-                }
-            }
-
-            // Footer section - mobile
-
-            .footer-section {
-
-                p {
-                    font-size: 1rem;
-                }
-
-                .social-contact {
-                    width: 55% !important;
-                }
-
-                #footer-logo {
-                    max-width: 50% !important;
-                }
-            }
-        }
+      .nav-link {
+        color: $red;
+      }
     }
+
+    // Hero section - mobile
+
+    .hero-section {
+      height: 40% !important;
+      width: 100%;
+      padding: 2rem !important;
+
+      .tagline {
+        font-size: 1rem;
+      }
+
+      #campaign-logo {
+        width: 80%;
+        height: auto;
+        margin: 8rem 0 6rem 0 !important;
+      }
+
+      #water-drop-img {
+        width: 55%;
+      }
+    }
+
+    // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - mobile
+
+    .components {
+      h1 {
+        font-size: 1.65rem !important;
+      }
+
+      // H1 background styling - mobile
+
+      .background-title,
+      .international-title,
+      .regional-title,
+      .ecological-title {
+        text-align: justify;
+
+        h1 {
+          padding-top: 1rem;
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+
+      // Component general styling - mobile
+
+      .background-section,
+      .regional-impact-section,
+      .international-impact-section,
+      .ecological-impact-section,
+      .what-can-be-done {
+        margin: 1rem 1.5rem 2rem 1.5rem !important;
+
+        // Image sizing - desktop
+
+        #background-one-img,
+        #background-two-img,
+        #regional-one-mobile,
+        #regional-two-mobile,
+        #international-map-img,
+        #ecological-one-mobile,
+        #ecological-two-mobile {
+          margin: 0 auto !important;
+          width: 320px;
+          max-width: 100%;
+          max-height: auto;
+          padding: 5px;
+          text-align: center !important;
+        }
+
+        // International map positioning - mobile
+
+        .international-map-img {
+          position: relative;
+          top: -0.25rem;
+        }
+
+        // Ecological section quote - desktop
+
+        .ecological-quote {
+          padding: 1rem;
+        }
+
+        // Component spacing - mobile
+
+        .background-2,
+        .regional-2,
+        .regional-mobile {
+          padding: 0 !important;
+        }
+
+        // Comanche Springs video - mobile
+
+        .comanche-springs {
+          iframe {
+            max-width: 330px;
+            max-height: auto;
+            padding: 2px !important;
+          }
+        }
+      }
+
+      // Quotes/CTAs - mobile
+
+      .quote-one-section,
+      .quote-two-section {
+        margin: 1rem 0 1rem 0 !important;
+        padding: 1rem;
+
+        .quote-section {
+          h3 {
+            font-size: 1.5rem !important;
+            padding: 1rem;
+          }
+        }
+      }
+
+      // What Can Be Done? section - mobile
+
+      .what-can-be-done {
+        margin: 0.5rem !important;
+
+        .wcbd-title {
+          padding: 50px;
+
+          h3 {
+            font-size: 1.95rem;
+          }
+        }
+
+        .wcbd-cta {
+          margin: 1rem 0 1rem 0 !important;
+        }
+      }
+
+      // Footer section - mobile
+
+      .footer-section {
+        p {
+          font-size: 1rem;
+        }
+
+        .social-contact {
+          width: 55% !important;
+        }
+
+        #footer-logo {
+          max-width: 50% !important;
+        }
+      }
+    }
+  }
 }
 
 //iPad / Tablet
 
 @media screen and (min-width: 415px) and (max-width: 900px) {
-    .water-campaign-page {
+  .water-campaign-page {
+    // Navbar - tablet
 
-        // Navbar - tablet
+    nav {
+      // button {
+      //     border: 1px solid $red;
+      //     max-width: 40px;
+      //     height: auto;
+      //     margin: 0;
+      // }
 
-        Nav {
+      .navbar-toggler-icon {
+        border: 1px solid $red;
+      }
 
-            // button {
-            //     border: 1px solid $red;
-            //     max-width: 40px;
-            //     height: auto;
-            //     margin: 0;
-            // }
+      .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+        backdrop-filter: blur(5px);
+      }
 
-            .navbar-toggler-icon {
-                border: 1px solid $red;
-            }
-
-            .navbar-collapse {
-                background-color: rgba(255, 255, 255, .5) !important;
-                backdrop-filter: blur(5px);
-            }
-
-            #nav-logo {
-                width: 30% !important;
-                height: auto;
-            }
-        }
-
-        // Hero section - tablet
-
-        .hero-section {
-            height: 50% !important;
-            width: 100%;
-            padding: 2rem !important;
-
-            p {
-                font-size: 1rem !important;
-            }
-
-            #water-logo {
-                width: 50%;
-                height: auto;
-                margin: 6rem 0 6rem 0 !important;
-            }
-        }
-
-        // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - tablet
-
-        .components {
-
-            h1 {
-                font-size: 2.25rem;
-            }
-
-            // Component general styling - tablet
-
-            .background-section,
-            .regional-impact-section,
-            .ecological-impact-section,
-            .international-impact-section,
-            .what-can-be-done {
-                margin: 1rem;
-
-                // Image sizing - tablet
-
-                #background-one-img,
-                #background-two-img,
-                #regional-one-mobile,
-                #regional-two-mobile,
-                #ecological-one-mobile,
-                #ecological-two-mobile {
-                    margin: 0 auto !important;
-                    width: 550px;
-                    max-width: 100%;
-                    max-height: auto;
-                    padding: 5px;
-                    text-align: center !important;
-                }
-
-                // International map positioning - tablet
-
-                .international-map-img {
-                    position: relative;
-                    top: 1rem !important;
-                    max-width: 500px !important;
-                    max-height: auto;
-                    padding: 10px;
-                    margin: 20px auto !important;
-                }
-            }
-            
-            // Quotes/CTAs - tablet
-
-            .quote-one-section,
-            .quote-two-section {
-                margin: 1.25rem 0rem 1rem 0rem !important;
-                padding: 1rem;
-
-                .quote-section {
-                    h3 {
-                        font-size: 2.5rem !important;
-                        padding: 1rem;
-                    }
-                }
-            }
-
-            // What Can Be Done? section - tablet
-
-            .what-can-be-done {
-                margin: 2rem .5rem 2.5rem .5rem;
-
-                .wcbd-cta {
-                    margin: 1rem 0 2rem 0 !important;
-                }
-            }
-
-            // Footer section - tablet
-
-            .footer-section {
-                margin: 0 auto !important;
-
-                #footer-logo {
-                    max-width: 25% !important;
-                }
-            }
-        }
+      #nav-logo {
+        width: 30% !important;
+        height: auto;
+      }
     }
+
+    // Hero section - tablet
+
+    .hero-section {
+      height: 50% !important;
+      width: 100%;
+      padding: 2rem !important;
+
+      p {
+        font-size: 1rem !important;
+      }
+
+      #water-logo {
+        width: 50%;
+        height: auto;
+        margin: 6rem 0 6rem 0 !important;
+      }
+    }
+
+    // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - tablet
+
+    .components {
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      // Component general styling - tablet
+
+      .background-section,
+      .regional-impact-section,
+      .ecological-impact-section,
+      .international-impact-section,
+      .what-can-be-done {
+        margin: 1rem;
+
+        // Image sizing - tablet
+
+        #background-one-img,
+        #background-two-img,
+        #regional-one-mobile,
+        #regional-two-mobile,
+        #ecological-one-mobile,
+        #ecological-two-mobile {
+          margin: 0 auto !important;
+          width: 550px;
+          max-width: 100%;
+          max-height: auto;
+          padding: 5px;
+          text-align: center !important;
+        }
+
+        // International map positioning - tablet
+
+        .international-map-img {
+          position: relative;
+          top: 1rem !important;
+          max-width: 500px !important;
+          max-height: auto;
+          padding: 10px;
+          margin: 20px auto !important;
+        }
+      }
+
+      // Quotes/CTAs - tablet
+
+      .quote-one-section,
+      .quote-two-section {
+        margin: 1.25rem 0rem 1rem 0rem !important;
+        padding: 1rem;
+
+        .quote-section {
+          h3 {
+            font-size: 2.5rem !important;
+            padding: 1rem;
+          }
+        }
+      }
+
+      // What Can Be Done? section - tablet
+
+      .what-can-be-done {
+        margin: 2rem 0.5rem 2.5rem 0.5rem;
+
+        .wcbd-cta {
+          margin: 1rem 0 2rem 0 !important;
+        }
+      }
+
+      // Footer section - tablet
+
+      .footer-section {
+        margin: 0 auto !important;
+
+        #footer-logo {
+          max-width: 25% !important;
+        }
+      }
+    }
+  }
 }
 
 // // In-between styling
@@ -736,130 +746,126 @@
 // Horizontal tablets
 
 @media screen and (min-width: 1024px) and (max-width: 1112px) {
+  .water-campaign-page {
+    // Navbar - horizontal tablets
 
-    .water-campaign-page {
-
-        // Navbar - horizontal tablets
-
-        Nav {
-            .nav-link {
-                font-size: .85rem !important;
-                text-align: center;
-            }
-        }
-
-        // Hero section - horizontal tablets
-
-        .hero-section {
-
-        }
-
-        // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - horizontal tablets
-
-        .components {
-
-            p, li {
-                font-size: 1rem;
-            }
-
-            // Component general styling - horizontal tablets
-
-            .background-section,
-            .regional-impact-section,
-            .international-impact-section,
-            .ecological-impact-section {
-                margin: 1.5rem;
-
-                // Image sizing - desktop
-
-                #background-one-img,
-                #background-two-img,
-                #regional-one-img,
-                #regional-two-img,
-                #international-map-img,
-                #ecological-one-img,
-                #ecological-two-img {
-                    margin: 2rem 0 0 0 !important;
-                    max-width: 400px;
-                    max-height: auto;
-                    padding: 5px;
-                }
-
-                // International map position - horizontal tablets
-
-                .international-map-img {
-                    position: relative;
-                    top: 1.5rem;
-                }
-
-                // Comanche Springs section - horizontal tablets
-
-                .comanche-springs {
-                    .comanche-video {
-                        iframe {
-                            max-width: 475px;
-                            max-height: auto;
-                        }
-                    }
-                }
-            }
-
-            // Quotes/CTAs - horizontal tablets
-
-                .quote-one-section,
-                .quote-two-section {
-                    margin: 1rem 0 1rem 0 !important;
-                    padding: 1rem 4rem 1rem 4rem !important;
-
-                    .quote-section {
-                        h3 {
-                            font-size: 1.75rem !important;
-                            padding: 1.5rem 6rem 1rem 6rem !important;
-                        }
-                    }
-                }
-
-                // What Can Be Done? section - horizontal tablets
-
-                .what-can-be-done {
-
-                    .wcbd-cta {
-                        h4 {
-                            font-size: 1.25rem;
-                        }
-                    }
-
-                    #legislator-img,
-                    #community-img,
-                    #advocate-img {
-                        height: 6rem !important;
-                    }
-                }
-
-                // Footer section - horizontal tablets
-
-                .footer-section {
-                    .footer-body {
-                        .social-contact {
-                            .social-col {
-                                padding: 7px !important;
-                                margin: .5rem auto !important;
-
-                                #twitter-icon,
-                                #facebook-icon,
-                                #instagram-icon {
-                                    max-width: auto !important;
-                                    max-height: 14rem !important;
-                                    margin: 1rem auto !important;
-                                }
-                            }
-                        }
-                    }
-                    
-                    #footer-logo {
-                        max-width: 25% !important;
-                    }
-                }
-        }
+    nav {
+      .nav-link {
+        font-size: 0.85rem !important;
+        text-align: center;
+      }
     }
+
+    // Hero section - horizontal tablets
+
+    .hero-section {
+    }
+
+    // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - horizontal tablets
+
+    .components {
+      p,
+      li {
+        font-size: 1rem;
+      }
+
+      // Component general styling - horizontal tablets
+
+      .background-section,
+      .regional-impact-section,
+      .international-impact-section,
+      .ecological-impact-section {
+        margin: 1.5rem;
+
+        // Image sizing - desktop
+
+        #background-one-img,
+        #background-two-img,
+        #regional-one-img,
+        #regional-two-img,
+        #international-map-img,
+        #ecological-one-img,
+        #ecological-two-img {
+          margin: 2rem 0 0 0 !important;
+          max-width: 400px;
+          max-height: auto;
+          padding: 5px;
+        }
+
+        // International map position - horizontal tablets
+
+        .international-map-img {
+          position: relative;
+          top: 1.5rem;
+        }
+
+        // Comanche Springs section - horizontal tablets
+
+        .comanche-springs {
+          .comanche-video {
+            iframe {
+              max-width: 475px;
+              max-height: auto;
+            }
+          }
+        }
+      }
+
+      // Quotes/CTAs - horizontal tablets
+
+      .quote-one-section,
+      .quote-two-section {
+        margin: 1rem 0 1rem 0 !important;
+        padding: 1rem 4rem 1rem 4rem !important;
+
+        .quote-section {
+          h3 {
+            font-size: 1.75rem !important;
+            padding: 1.5rem 6rem 1rem 6rem !important;
+          }
+        }
+      }
+
+      // What Can Be Done? section - horizontal tablets
+
+      .what-can-be-done {
+        .wcbd-cta {
+          h4 {
+            font-size: 1.25rem;
+          }
+        }
+
+        #legislator-img,
+        #community-img,
+        #advocate-img {
+          height: 6rem !important;
+        }
+      }
+
+      // Footer section - horizontal tablets
+
+      .footer-section {
+        .footer-body {
+          .social-contact {
+            .social-col {
+              padding: 7px !important;
+              margin: 0.5rem auto !important;
+
+              #twitter-icon,
+              #facebook-icon,
+              #instagram-icon {
+                max-width: auto !important;
+                max-height: 14rem !important;
+                margin: 1rem auto !important;
+              }
+            }
+          }
+        }
+
+        #footer-logo {
+          max-width: 25% !important;
+        }
+      }
+    }
+  }
 }
