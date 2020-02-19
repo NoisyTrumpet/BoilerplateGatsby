@@ -28,6 +28,17 @@
     .nav-item {
       margin: 0 2rem;
       transition: ease-in 0.5s;
+
+      .nav-donate-btn {
+        background-color: $red !important;
+        border-radius: 10px;
+        padding-bottom: 2rem;
+      }
+
+      .nav-donate-btn:hover {
+        background-color: transparent !important;
+        border: 3px solid $red;
+      }
     }
 
     .nav-link {
@@ -397,6 +408,14 @@
           margin: 6px 0;
           z-index: 5;
         }
+
+        .nav-item {
+          margin: 0 1rem;
+        }
+
+        .line {
+          border: 1px solid $red;
+        }
       }
 
       .navbar-collapse {
@@ -588,21 +607,32 @@
   .water-campaign-page {
     // Navbar - tablet
 
-    nav {
-      // button {
-      //     border: 1px solid $red;
-      //     max-width: 40px;
-      //     height: auto;
-      //     margin: 0;
-      // }
+    .headroom-wrapper {
+      height: 200px !important;
+    }
 
-      .navbar-toggler-icon {
-        border: 1px solid $red;
+    nav {
+      .nav-item {
+        margin: 0 1rem;
+      }
+
+      .nav-link {
+        margin-bottom: 1rem;
+      }
+
+      .line {
+        border: 2px solid $red;
+        width: 2.25rem !important;
+        margin: 8px;
       }
 
       .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.5) !important;
         backdrop-filter: blur(5px);
+      }
+
+      .nav-donate-btn {
+        margin-bottom: 1rem;
       }
 
       #nav-logo {

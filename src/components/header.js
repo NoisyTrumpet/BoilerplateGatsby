@@ -49,6 +49,9 @@ const Header = (props) => {
               <NavItem>
                 <NavLink onClick={() => scrollTo('#what-can-be-done')}>What Can <br/>Be Done?</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink className="nav-donate-btn" href="">Donate to <br/>Our Cause</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
