@@ -41,7 +41,7 @@ export default class WhatCanBeDone extends React.Component {
                     Implore your legislator to support groundwater management and
                     protection.
                   </p>
-                  <a href="https://www.facebook.com/devilsriverconservancy/" target="_blank" rel="noreferrer noopener"><button>Events</button></a>
+                  <a href="https://www.facebook.com/pg/devilsriverconservancy/events/?ref=page_internal" target="_blank" rel="noreferrer noopener"><button>Events</button></a>
                 </div>
                 <div className="wcbd-cta col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                   <img src={advocateImg} id="advocate-img" />

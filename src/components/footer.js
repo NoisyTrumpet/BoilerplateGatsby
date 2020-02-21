@@ -38,11 +38,11 @@ export default class Footer extends React.Component {
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-0">
                 <h4>Reach Out</h4>
                 <p>
-                  <a href="tel:210-XXX-XXXX">(210)-XXX-XXXX</a>
+                  <a href="tel:512-482-4412">(512)-482-4412</a>
                 </p>
                 <p>
-                  <a href="mailto:contact@devilsriver.com">
-                    contact@devilsriver.com
+                  <a href="mailto:info@devilsriverconservancy.org">
+                    info@devilsriverconservancy.org
                   </a>
                 </p>
               </div>

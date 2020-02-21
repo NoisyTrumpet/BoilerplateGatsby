@@ -47,11 +47,11 @@ const Header = (props) => {
                 <NavLink onClick={() => scrollTo('#ecological-impact')}>Ecological <br/>Impact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={() => scrollTo('#what-can-be-done')}>What Can <br/>Be Done?</NavLink>
+                <NavLink onClick={() => scrollTo('#what-can-be-done')}>Take Action</NavLink>
               </NavItem>
               <NavItem>
                 {/* <NavLink className="nav-donate-btn" href="">Donate</NavLink> */}
-                <a className="nav-donate-btn" href="#">Donate</a>
+                <a className="nav-donate-btn" href="https://www.devilsriverconservancy.org/donate">Donate</a>
               </NavItem>
             </Nav>
           </Collapse>
