@@ -30,14 +30,21 @@
       transition: ease-in 0.5s;
 
       .nav-donate-btn {
-        background-color: $red !important;
-        border-radius: 10px;
-        padding-bottom: 2rem;
+        background-color: $red;
+        color: white;
+        font-family: $font-family-base;
+        font-weight: 600;
+        border: 2px solid $red;
+        border-radius: 1px;
+        padding: 9px 15px 11px 15px;
+        box-shadow: 2px 1px 5px -1px #666666;
       }
 
       .nav-donate-btn:hover {
-        background-color: transparent !important;
-        border: 3px solid $red;
+        background-color: $aqua !important;
+        border: 2px solid $aqua;
+        color: white;
+        text-decoration: none;
       }
     }
 
@@ -67,6 +74,19 @@
     .nav-link {
       color: $red;
     }
+
+    // .nav-donate-btn {
+    //   background-color: $aqua !important;
+    //   border-radius: 10px;
+    //   border: 3px solid $aqua;
+    //   padding: 0 2px 2px 2px;
+    // }
+
+    // .nav-donate-btn:hover {
+    //   background-color: transparent !important;
+    //   border: 3px solid $aqua;
+    //   color: $aqua;
+    // }
   }
 
   // Hero section - desktop
@@ -183,10 +203,12 @@
       // Ecological section quote - desktop
 
       .ecological-quote {
+        margin-top: 6rem;
         padding: 1rem 3rem 1rem 3rem;
         color: $red;
         font-style: italic;
         font-weight: 800;
+        font-size: 1.75rem;
       }
 
       // Comanche Springs section - desktop
@@ -617,7 +639,8 @@
       }
 
       .nav-link {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        color: $red;
       }
 
       .line {
@@ -632,7 +655,7 @@
       }
 
       .nav-donate-btn {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
 
       #nav-logo {
