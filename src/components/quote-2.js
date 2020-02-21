@@ -14,14 +14,15 @@ export default class QuoteTwo extends React.Component {
   render() {
     return (
       <ScrollAnimation animateIn="fadeInUp">
-      <div className="quote-two-section w-100">
-        <div className="quote-section">
-          <h3>
-            "If we pump too much water from our aquifers,<br/> our rivers and streams
-            can go dry."
-          </h3>
+        <div className="quote-two-section w-100">
+          <div className="quote-section">
+            <h3>
+              "Water has been the lifeblood of Val Verde County for thousands of
+              years. If we misuse it, we eventually lose it and this region will
+              suffer immensely."
+            </h3>
+          </div>
         </div>
-      </div>
       </ScrollAnimation>
     )
   }

@@ -146,8 +146,14 @@
       font-size: 1.25rem;
     }
 
-    span {
+    .emphasis-text {
       color: $red;
+      font-weight: 600;
+    }
+
+    .slogan-text {
+      color: $aqua;
+      font-weight: 600;
     }
 
     // H1 background styling - desktop
@@ -177,6 +183,16 @@
         font-weight: 800;
       }
 
+      a {
+        color: $aqua;
+        font-weight: 500;
+      }
+
+      a:hover {
+        color: $red;
+        text-decoration: none;
+      }
+
       // Image sizing - desktop
 
       #background-one-img,
@@ -197,18 +213,26 @@
 
       .international-map-img {
         position: relative;
-        top: -8rem;
+        top: -3rem;
         max-width: 100%;
       }
 
       // Ecological section quote - desktop
 
       .ecological-quote {
-        margin-top: 6rem;
+        margin-top: 1.5rem;
         padding: 1rem 3rem 1rem 3rem;
         color: $red;
+        font-family: $font-family-large-quote;
         font-style: italic;
         font-weight: 800;
+        font-size: 1.25rem;
+      }
+
+      .eco-impact-end {
+        font-style: none;
+        font-family: $font-family-sub-heading;
+        color: $aqua;
         font-size: 1.75rem;
       }
 
@@ -317,11 +341,12 @@
           font-family: $font-family-heading !important;
           color: $aqua;
           text-align: center;
+          font-size: 2rem;
         }
       }
 
       .wcbd-cta {
-        margin: 5rem 0 0 0 !important;
+        margin: 2rem 0 0 0 !important;
         text-align: center;
 
         h4 {
@@ -442,7 +467,7 @@
       }
 
       .navbar-collapse {
-        background-color: rgba(255, 255, 255, 0.5) !important;
+        background-color: rgba(255, 255, 255, 0.75) !important;
         backdrop-filter: blur(7px);
         max-width: 100% !important;
         margin: 0 !important;
@@ -514,6 +539,15 @@
         }
       }
 
+      // Map image for mobile view - mobile
+
+      .map-mobile {
+        #international-map-mobile {
+          max-width: 370px;
+          text-align: center;
+        }
+      }
+
       // Component general styling - mobile
 
       .background-section,
@@ -529,7 +563,6 @@
         #background-two-img,
         #regional-one-mobile,
         #regional-two-mobile,
-        #international-map-img,
         #ecological-one-mobile,
         #ecological-two-mobile {
           margin: 0 auto !important;
@@ -538,13 +571,6 @@
           max-height: auto;
           padding: 5px;
           text-align: center !important;
-        }
-
-        // International map positioning - mobile
-
-        .international-map-img {
-          position: relative;
-          top: -0.25rem;
         }
 
         // Ecological section quote - desktop
