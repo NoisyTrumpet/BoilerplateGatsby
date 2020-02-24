@@ -93,7 +93,7 @@
     height: 70%;
     width: 100%;
     padding: 5rem !important;
-    margin-top: -8rem;
+    margin-top: -10rem;
 
     #campaign-logo {
       width: 35%;
@@ -652,6 +652,12 @@
 
 @media screen and (min-width: 415px) and (max-width: 900px) {
   .water-campaign-page {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    
     // Navbar - tablet
 
     .headroom-wrapper {
@@ -659,8 +665,10 @@
     }
 
     nav {
+      padding: 5px 0 5px 0;
+
       .nav-item {
-        margin: 0 1rem;
+        margin: .5rem;
       }
 
       .nav-link {
@@ -687,15 +695,35 @@
         margin-bottom: 2rem;
       }
 
-      #nav-logo {
-        width: 30% !important;
-        height: auto;
+      .navbar-toggler {
+        padding: 5px;
+        margin-left: -10rem;
+
+        .line {
+          margin: 5px 0 5px 0;
+        }
       }
+
+      .navbar-brand {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        #nav-logo {
+          width: 30% !important;
+          height: auto;
+          padding-right: 4px;
+          margin-left: 2px;
+        }
+      }
+      
     }
 
     // Hero section - tablet
 
     .hero-section {
+      position: relative;
+      top: -3rem;
       height: 50% !important;
       width: 100%;
       padding: 2rem !important;
