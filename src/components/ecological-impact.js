@@ -15,72 +15,74 @@ export default class EcologicalImpact extends React.Component {
   render() {
     return (
       <div className="ecological-impact-section" id="ecological-impact">
-        <div className="row">
-          <div className="ecological-1 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center d-none d-lg-block d-xl-block">
-            <ScrollAnimation animateIn="slideInLeft">
+        <ScrollAnimation animateIn="fadeIn">
+        <div className="eco-desktop-tablet">
+          <div className="row">
+            <div className="ecological-1 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center d-none d-lg-block d-xl-block">
               <img src={EcologicalOne} id="ecological-one-img" alt="" />
               <img src={EcologicalTwo} id="ecological-two-img" alt="" />
-            </ScrollAnimation>
-          </div>
-          <div className="ecological-2 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <div className="ecological-title text-center">
-              <h1>Ecological Impact</h1>
             </div>
-            <div className="ecological-body">
-              <p>
-                Several threatened and endangered aquatic species call Val Verde
-                County home. These include:
-              </p>
-              <ul>
-                <li>Texas Hornshell Mussel</li>
-                <li>Devils River Minnow</li>
-                <li>Proserpine Shiner</li>
-                <li>Rio Grande Darter</li>
-                <li>Conchos Pupfish</li>
-                <li>Mexican Blindcat</li>
-              </ul>
-              <p>
-                In accordance with the Endangered Species Act, if we do not
-                protect the required environment and water these animals need to
-                survive, the federal government could intervene in local water
-                management and encroach upon private property rights.
-              </p>
-              <div className="text-center">
-                <p className="ecological-quote">
-                  "Our goal is to avoid the same fate the city of Fort Stockton
-                  endured with their beloved Comanche Springs. If we do not
-                  protect our groundwater, the rule of capture law will reign
-                  and leave future generations without this valuable resource."
-                </p>
+            <div className="ecological-2 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div className="ecological-title text-center">
+                <h1>Ecological Impact</h1>
               </div>
-              <div>
-                <p className="eco-impact-end text-center">
-                  How do we protect our resources?
-                </p>
+              <div className="ecological-body">
                 <p>
-                  Spring and river flows are indicators of groundwater levels in
-                  the watersheds of Val Verde County. We can use our desired
-                  future spring and river flows to set water management
-                  standards.
+                  Several threatened and endangered aquatic species call Val
+                  Verde County home. These include:
                 </p>
+                <ul>
+                  <li>Texas Hornshell Mussel</li>
+                  <li>Devils River Minnow</li>
+                  <li>Proserpine Shiner</li>
+                  <li>Rio Grande Darter</li>
+                  <li>Conchos Pupfish</li>
+                  <li>Mexican Blindcat</li>
+                </ul>
                 <p>
-                  These standards, customized to each watershed, can aid the
-                  sustainable management of our groundwater resources and the
-                  protection of private property rights, recreational values,
-                  and municipal water supplies.
+                  In accordance with the Endangered Species Act, if we do not
+                  protect the required environment and water these animals need
+                  to survive, the federal government could intervene in local
+                  water management and encroach upon private property rights.
                 </p>
+                <div className="text-center">
+                  <p className="ecological-quote">
+                    "Our goal is to avoid the same fate the city of Fort
+                    Stockton endured with their beloved Comanche Springs. If we
+                    do not protect our groundwater, the rule of capture law will
+                    reign and leave future generations without this valuable
+                    resource."
+                  </p>
+                </div>
+                <div>
+                  <p className="eco-impact-end text-center">
+                    How do we protect our resources?
+                  </p>
+                  <p>
+                    Spring and river flows are indicators of groundwater levels
+                    in the watersheds of Val Verde County. We can use our
+                    desired future spring and river flows to set water
+                    management standards.
+                  </p>
+                  <p>
+                    These standards, customized to each watershed, can aid the
+                    sustainable management of our groundwater resources and the
+                    protection of private property rights, recreational values,
+                    and municipal water supplies.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="ecological-mobile col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center d-block d-sm-block d-md-block d-lg-none d-xl-none">
-            <ScrollAnimation animateIn="slideInLeft">
-              <img src={EcologicalOne} id="ecological-one-mobile" alt="" />
-              <img src={EcologicalTwo} id="ecological-two-mobile" alt="" />
-            </ScrollAnimation>
+            <img src={EcologicalOne} id="ecological-one-mobile" alt="" />
+            <img src={EcologicalTwo} id="ecological-two-mobile" alt="" />
           </div>
         </div>
+        </ScrollAnimation>
 
+        <ScrollAnimation animateIn="fadeIn">
         <div className="row comanche-springs">
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <h4>"It's Happened Before, It Can Happen To Us!"</h4>
@@ -119,6 +121,7 @@ export default class EcologicalImpact extends React.Component {
             ></iframe>
           </div>
         </div>
+        </ScrollAnimation>
       </div>
     )
   }

@@ -4,7 +4,7 @@ import "../scss/main.scss"
 import "animate.css/animate.min.css"
 import ScrollAnimation from "react-animate-on-scroll"
 import BackgroundOne from "../images/background_1.png"
-import BackgroundTwo from "../images/background_2.png"
+import BackgroundTwo from "../images/studerLandscape.png"
 
 export default class Background extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class Background extends React.Component {
 
   render() {
     return (
-      <ScrollAnimation animateIn="slideInLeft">
+      <ScrollAnimation animateIn="fadeIn" duration={1}>
         <div className="background-section" id="background">
           <div className="row">
             <div className="background-1 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -45,15 +45,15 @@ export default class Background extends React.Component {
                   </span>
                   . With that increase, so will the demand for water.
                 </p>
-                <p className="emphasis-text text-center">
+                <p className="emphasis-center-text text-center">
                   Unlike surrounding counties, Val Verde County does not have a
                   water management plan.
                 </p>
-                <p className="emphasis-text text-center">
+                <p className="emphasis-center-text text-center">
                   Without a plan, the future of Val Verde’s water is unknown.
                 </p>
                 <p>
-                  <span className="slogan-text">"Water. The Consequences?"</span> shows the risk of not
+                  <span className="emphasis-text">"Water. The Consequences?"</span> shows the risk of not
                   planning for the future of Val Verde County’s water resources
                   and advocates for a water management strategy that protects
                   private property rights, stream flows, recreational values,
@@ -68,22 +68,21 @@ export default class Background extends React.Component {
               </div>
             </div>
             <div className="background-2 text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto">
-              <ScrollAnimation animateIn="slideInRight" delay="0">
+            
                 <img
                   src={BackgroundOne}
                   alt=""
                   className="background-image-one"
                   id="background-one-img"
                 />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="slideInRight" delay="10">
+          
                 <img
                   src={BackgroundTwo}
                   alt=""
                   className="background-image-two"
                   id="background-two-img"
                 />
-              </ScrollAnimation>
+              
             </div>
           </div>
         </div>

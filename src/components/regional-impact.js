@@ -17,16 +17,15 @@ export default class RegionalImpact extends React.Component {
     return (
       <Container fluid={true}>
         <div className="regional-impact-section" id="regional-impact">
+          <ScrollAnimation animateIn="fadeIn">
           <div className="row">
             <div className="regional-1 col-xs-12 col-sm-12 col-md-12 col-lg-6 mx-auto d-none d-lg-block text-center">
-              <ScrollAnimation animateIn="slideInLeft">
+              
                 <img src={RegionalOne} alt="" id="regional-one-img" />
                 <img src={RegionalTwo} alt="" id="regional-two-img" />
-              </ScrollAnimation>
             </div>
 
             <div className="regional-2 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <ScrollAnimation animateIn="slideInRight">
                 <div class="regional-title text-center">
                   <h1>Regional Impact</h1>
                 </div>
@@ -74,17 +73,13 @@ export default class RegionalImpact extends React.Component {
                   </p>
 
                   <div className="regional-mobile text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 pt-5 d-lg-none d-xl-none">
-                    <ScrollAnimation animateIn="slideInLeft">
                       <img src={RegionalOne} alt="" id="regional-one-mobile" />
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn="slideInRight">
                       <img src={RegionalTwo} alt="" id="regional-two-mobile" />
-                    </ScrollAnimation>
                   </div>
                 </div>
-              </ScrollAnimation>
             </div>
           </div>
+          </ScrollAnimation>
         </div>
       </Container>
     )

@@ -14,9 +14,9 @@ export default class InternationalImpact extends React.Component {
   render() {
     return (
       <div className="international-impact-section" id="international-impact">
+        <ScrollAnimation animateIn="fadeIn" duration={1}>
         <div className="row">
           <div className="international-1 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <ScrollAnimation animateIn="fadeInLeft">
               <div className="international-title">
                 <h1>International Impact</h1>
               </div>
@@ -45,20 +45,18 @@ export default class InternationalImpact extends React.Component {
                   Rio, Texas.
                 </p>
               </div>
-            </ScrollAnimation>
           </div>
 
           <div className="international-2 text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 d-none d-md-block d-lg-block d-xl-block">
-            <ScrollAnimation animateIn="slideInRight">
               <img
                 src={InternationalMap}
                 alt="Map of the Edward & Trinity aquifer"
                 className="international-map-img"
                 id="international-map-mobile"
               />
-            </ScrollAnimation>
           </div>
         </div>
+        </ScrollAnimation>
       </div>
     )
   }

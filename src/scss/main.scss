@@ -148,11 +148,13 @@
 
     .emphasis-text {
       color: $red;
-      font-weight: 600;
+      font-weight: 500;
     }
 
-    .slogan-text {
-      color: $aqua;
+    .emphasis-center-text {
+      font-family: $font-family-large-quote;
+      font-style: italic;
+      color: $red;
       font-weight: 600;
     }
 
@@ -189,7 +191,7 @@
       }
 
       a:hover {
-        color: $red;
+        color: $gold;
         text-decoration: none;
       }
 
@@ -213,8 +215,8 @@
 
       .international-map-img {
         position: relative;
-        top: -3rem;
-        max-width: 100%;
+        top: -4rem;
+        max-width: 80%;
       }
 
       // Ecological section quote - desktop
