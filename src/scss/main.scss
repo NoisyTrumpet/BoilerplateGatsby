@@ -75,19 +75,6 @@
     .nav-link {
       color: $red;
     }
-
-    // .nav-donate-btn {
-    //   background-color: $aqua !important;
-    //   border-radius: 10px;
-    //   border: 3px solid $aqua;
-    //   padding: 0 2px 2px 2px;
-    // }
-
-    // .nav-donate-btn:hover {
-    //   background-color: transparent !important;
-    //   border: 3px solid $aqua;
-    //   color: $aqua;
-    // }
   }
 
   // Hero section - desktop
@@ -100,7 +87,6 @@
         rgba(63, 56, 68, 0.2) 100%
       ),
       url("../images/watc-bg.png");
-    // background: rgba(63, 56, 68, .2), url("../images/watc-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 25%;
@@ -133,6 +119,7 @@
   // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - desktop
 
   .components {
+
     h1 {
       font-family: $font-family-heading;
       color: $aqua;
@@ -154,8 +141,16 @@
     .emphasis-center-text {
       font-family: $font-family-large-quote;
       font-style: italic;
-      color: $red;
+      color: $dark-blue;
       font-weight: 600;
+      font-size: 1.25rem;
+      padding: 1px 15px 1px 15px;
+      line-height: 2rem;
+
+      // .emphasis-emphasis {
+      //   font-size: 1.5rem;
+      //   color: $aqua;
+      // }
     }
 
     // H1 background styling - desktop
@@ -234,7 +229,7 @@
       .eco-impact-end {
         font-style: none;
         font-family: $font-family-sub-heading;
-        color: $aqua;
+        color: $red;
         font-size: 1.75rem;
       }
 
@@ -526,6 +521,7 @@
         font-size: 1.65rem !important;
       }
 
+
       // H1 background styling - mobile
 
       .background-title,
@@ -755,13 +751,13 @@
 
         // International map positioning - tablet
 
-        .international-map-img {
+        #international-map-mobile {
           position: relative;
-          top: 1rem !important;
-          max-width: 500px !important;
-          max-height: auto;
-          padding: 10px;
-          margin: 20px auto !important;
+            top: 1rem !important;
+            max-width: 410px !important;
+            max-height: auto;
+            padding: 10px;
+            margin: 20px auto !important;
         }
       }
 
@@ -802,38 +798,6 @@
     }
   }
 }
-
-// // In-between styling
-
-// @media screen and (min-width: 769px) and (max-width: 1023) {
-//     .water-campaign-page {
-//         .components {
-//             .background-section,
-//             .ecological-impact-section,
-//             .regional-impact-section,
-//             .international-impact-section,
-//             .what-can-be-done {
-//                 // Image sizing - inbetween
-
-//                 .ecological-mobile {
-//                     #background-one-img,
-//                     #background-two-img,
-//                     #regional-one-mobile,
-//                     #regional-two-mobile,
-//                     #ecological-one-mobile,
-//                     #ecological-two-mobile {
-//                         margin: 0 auto !important;
-//                         width: 500px;
-//                         max-width: 100% !important;
-//                         max-height: auto;
-//                         padding: 5px;
-//                         text-align: center !important;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 // Horizontal tablets
 
@@ -956,6 +920,157 @@
 
         #footer-logo {
           max-width: 25% !important;
+        }
+      }
+    }
+  }
+}
+
+// In-between styling 901px - 991px
+
+@media screen and (min-width: 901px) and (max-width: 991px) {
+  .water-campaign-page {
+    .components {
+
+      // images sizing - 900-991px
+      #background-one-img,
+      #background-two-img,
+      #regional-one-mobile,
+      #regional-two-mobile,
+      #international-map-img,
+      #ecological-one-mobile,
+      #ecological-two-mobile {
+        margin: 2rem 0 0 0 !important;
+        max-width: 800px;
+        max-height: auto;
+        padding-bottom: 5px;
+        text-align: center;
+      }
+
+      // international map sizing - 900-991px
+      .international-impact-section {
+        #international-map-mobile {
+          position: relative;
+          top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+
+    }
+  }
+}
+
+// In-between styling 992px - 1023px
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  .water-campaign-page {
+
+    // Navbar for 992px - 1023px
+    nav {
+     .nav-item {
+      margin: 0 1rem;
+      transition: ease-in 0.5s;
+
+      .nav-donate-btn {
+        background-color: $red;
+        color: white;
+        font-family: $font-family-base;
+        font-weight: 600;
+        border: 2px solid $red;
+        border-radius: 1px;
+        padding: 9px 15px 11px 15px;
+        box-shadow: 2px 1px 5px -1px #666666;
+        margin-bottom: 6rem;
+      }
+
+      .nav-donate-btn:hover {
+        background-color: $aqua !important;
+        border: 2px solid $aqua;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .nav-link {
+      font-family: $font-family-base !important;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      padding: 0 13px 0 13px !important;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+      #nav-logo {
+        width: 95% !important;
+        height: auto;
+        padding: 0 13px 0 13px !important;
+      }
+    }
+
+    .components {
+
+      .background-section {
+        .quote-922 {
+          color: $aqua !important;
+          font-family: $font-family-sub-heading !important;
+        }
+      }
+
+      #international-map-mobile {
+        position: relative;
+        top: 2rem;
+        max-width: 85%;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 1113px) {
+  .water-campaign-page {
+    nav {
+      .nav-item {
+      margin: 0 1.2rem;
+      transition: ease-in 0.5s;
+
+      .nav-donate-btn {
+        background-color: $red;
+        color: white;
+        font-family: $font-family-base;
+        font-weight: 600;
+        border: 2px solid $red;
+        border-radius: 1px;
+        padding: 9px 15px 11px 15px;
+        box-shadow: 2px 1px 5px -1px #666666;
+        margin-bottom: 6rem;
+      }
+
+      .nav-donate-btn:hover {
+        background-color: $aqua !important;
+        border: 2px solid $aqua;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .nav-link {
+      font-family: $font-family-base !important;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      padding: 0 13px 0 13px !important;
+
+      &:hover {
+        color: $red;
+      }
+    }
+      .navbar-brand {
+        #nav-logo {
+          width: 90% !important;
+          height: auto;
         }
       }
     }

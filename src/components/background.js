@@ -46,18 +46,19 @@ export default class Background extends React.Component {
                   . With that increase, so will the demand for water.
                 </p>
                 <p className="emphasis-center-text text-center">
-                  Unlike surrounding counties, Val Verde County does not have a
+                  Unlike surrounding counties, <span className="emphasis-emphasis">Val Verde County</span> does not have a
                   water management plan.
-                </p>
-                <p className="emphasis-center-text text-center">
-                  Without a plan, the future of Val Verde’s water is unknown.
+                  <br />
+                  Without a plan, the future of <span className="emphasis-emphasis">Val Verde’s</span> water is unknown.
                 </p>
                 <p>
-                  <span className="emphasis-text">"Water. The Consequences?"</span> shows the risk of not
-                  planning for the future of Val Verde County’s water resources
-                  and advocates for a water management strategy that protects
-                  private property rights, stream flows, recreational values,
-                  and municipal water supplies.
+                  <span className="emphasis-text">
+                    "Water. The Consequences?"
+                  </span>{" "}
+                  shows the risk of not planning for the future of Val Verde
+                  County’s water resources and advocates for a water management
+                  strategy that protects private property rights, stream flows,
+                  recreational values, and municipal water supplies.
                 </p>
                 <p>
                   Join the Devils River Conservancy in supporting smart
@@ -68,21 +69,19 @@ export default class Background extends React.Component {
               </div>
             </div>
             <div className="background-2 text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto">
-            
-                <img
-                  src={BackgroundOne}
-                  alt=""
-                  className="background-image-one"
-                  id="background-one-img"
-                />
-          
-                <img
-                  src={BackgroundTwo}
-                  alt=""
-                  className="background-image-two"
-                  id="background-two-img"
-                />
-              
+              <img
+                src={BackgroundOne}
+                alt=""
+                className="background-image-one"
+                id="background-one-img"
+              />
+
+              <img
+                src={BackgroundTwo}
+                alt=""
+                className="background-image-two"
+                id="background-two-img"
+              />
             </div>
           </div>
         </div>
