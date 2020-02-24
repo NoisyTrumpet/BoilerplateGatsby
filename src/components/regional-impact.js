@@ -18,14 +18,13 @@ export default class RegionalImpact extends React.Component {
       <Container fluid={true}>
         <div className="regional-impact-section" id="regional-impact">
           <ScrollAnimation animateIn="fadeIn">
-          <div className="row">
-            <div className="regional-1 col-xs-12 col-sm-12 col-md-12 col-lg-6 mx-auto d-none d-lg-block text-center">
-              
+            <div className="row">
+              <div className="regional-1 col-xs-12 col-sm-12 col-md-12 col-lg-6 mx-auto d-none d-lg-block text-center">
                 <img src={RegionalOne} alt="" id="regional-one-img" />
                 <img src={RegionalTwo} alt="" id="regional-two-img" />
-            </div>
+              </div>
 
-            <div className="regional-2 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <div className="regional-2 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div class="regional-title text-center">
                   <h1>Regional Impact</h1>
                 </div>
@@ -59,7 +58,7 @@ export default class RegionalImpact extends React.Component {
                     and federal parks for hunting, fishing, paddling and bird
                     watching — all of which are water dependent. Val Verde’s{" "}
                     <a href="http://www.drchamber.com/cvb" target="_blank">
-                      $25.1 million
+                      $52.1 million
                     </a>{" "}
                     per year tourism industry could be at stake if water is
                     depleted from our region, leaving residents without jobs.
@@ -67,18 +66,18 @@ export default class RegionalImpact extends React.Component {
                   <p>
                     Amistad Reservoir alone creates 695 jobs in Del Rio, and San
                     Felipe Springs are the main water source for Laughlin AFB
-                    which as a{" "}
-                    <span className="emphasis-text">$243,417,834</span> economic
-                    impact on Del Rio annually.
+                    which contributes an economic impact of{" "}
+                    <span className="emphasis-text">$243,417,834</span> on Del
+                    Rio annually.
                   </p>
 
                   <div className="regional-mobile text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 pt-5 d-lg-none d-xl-none">
-                      <img src={RegionalOne} alt="" id="regional-one-mobile" />
-                      <img src={RegionalTwo} alt="" id="regional-two-mobile" />
+                    <img src={RegionalOne} alt="" id="regional-one-mobile" />
+                    <img src={RegionalTwo} alt="" id="regional-two-mobile" />
                   </div>
                 </div>
+              </div>
             </div>
-          </div>
           </ScrollAnimation>
         </div>
       </Container>

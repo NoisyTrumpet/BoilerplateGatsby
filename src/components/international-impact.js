@@ -36,14 +36,14 @@ export default class InternationalImpact extends React.Component {
                   As a result, this could incite federal action and regulation
                   for noncompliance of the treaty.
                 </p>
-                <p>
+                {/* <p>
                   For decades, these waters have quenched the thirst and cooled
                   the summer days of Val Verde County’s community, supported by
                   eco-tourism and agriculture industries, and contributed to
                   upwards of one third of the downstream flows to the Rio Grande
                   - the primary water source for any communities south of Del
                   Rio, Texas.
-                </p>
+                </p> */}
               </div>
           </div>
 
