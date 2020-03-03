@@ -614,7 +614,7 @@
       // What Can Be Done? section - mobile
 
       .what-can-be-done {
-        margin: 0.5rem !important;
+        margin-top: 1rem !important;
 
         .wcbd-title {
           padding: 50px;
@@ -696,7 +696,7 @@
       }
 
       .navbar-toggler {
-        padding: 5px;
+        padding: 15px;
         margin-left: -10rem;
 
         .line {
@@ -712,7 +712,7 @@
         #nav-logo {
           width: 30% !important;
           height: auto;
-          padding-right: 4px;
+          padding: 5px 0 0 5px;
           margin-left: 2px;
         }
       }
@@ -760,6 +760,21 @@
         .ecological-quote {
           margin-top: 1.5rem;
         }
+      }
+
+      // International map positioning - tablet
+
+        .map-mobile {
+          .international-map-mobile, 
+          #international-map-mobile {
+            position: relative;
+            top: 1rem !important;
+            width: 410px !important;
+            max-height: auto;
+            padding: 10px;
+            margin: 20px auto !important;
+          }
+        }
 
         // Image sizing - tablet
 
@@ -776,18 +791,6 @@
           padding: 5px;
           text-align: center !important;
         }
-
-        // International map positioning - tablet
-
-        #international-map-mobile {
-          position: relative;
-            top: 1rem !important;
-            max-width: 410px !important;
-            max-height: auto;
-            padding: 10px;
-            margin: 20px auto !important;
-        }
-      }
 
       // Quotes/CTAs - tablet
 
@@ -807,10 +810,21 @@
       // What Can Be Done? section - tablet
 
       .what-can-be-done {
-        margin: 2rem 0.5rem 2.5rem 0.5rem;
+        text-align: center !important;
+        margin: 1rem !important;
+        // margin: 2rem 0.5rem 2.5rem 0.5rem;
+
+        .wcbd-title {
+          h3 {
+            margin: 0;
+            padding: 0;
+          }
+          padding: 0 !important;
+          margin: 1rem 0 0 0 !important;
+        }
 
         .wcbd-cta {
-          margin: 1rem 0 2rem 0 !important;
+          // margin: 1rem 0 2rem 0 !important;
         }
       }
 
@@ -834,15 +848,24 @@
     // Navbar - horizontal tablets
 
     nav {
+      margin-top: 1rem !important;
+      text-align: right !important;
+
       .nav-link {
         font-size: 0.85rem !important;
         text-align: center;
+        padding: 2px !important;
+      }
+
+      #nav-logo {
+        width: 110% !important;
       }
     }
 
     // Hero section - horizontal tablets
 
     .hero-section {
+      margin-top: -10rem;
     }
 
     // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - horizontal tablets
@@ -871,7 +894,7 @@
         #ecological-one-img,
         #ecological-two-img {
           margin: 2rem 0 0 0 !important;
-          max-width: 400px;
+          max-width: 475px;
           max-height: auto;
           padding: 5px;
         }
@@ -880,7 +903,8 @@
 
         .international-map-img {
           position: relative;
-          top: 1.5rem;
+          top: .5rem;
+          max-width: 450px !important;
         }
 
         // Comanche Springs section - horizontal tablets
@@ -939,7 +963,7 @@
               #facebook-icon,
               #instagram-icon {
                 max-width: auto !important;
-                max-height: 14rem !important;
+                max-height: 2rem !important;
                 margin: 1rem auto !important;
               }
             }
