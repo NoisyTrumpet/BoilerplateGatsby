@@ -51,7 +51,7 @@ const Header = (props) => {
               </NavItem>
               <NavItem>
                 {/* <NavLink className="nav-donate-btn" href="">Donate</NavLink> */}
-                <a className="nav-donate-btn" href="https://www.devilsriverconservancy.org/donate">Donate</a>
+                <a className="nav-donate-btn" href="https://devilsriverconservancy.z2systems.com/np/clients/devilsriverconservancy/donation.jsp">Donate</a>
               </NavItem>
             </Nav>
           </Collapse>
