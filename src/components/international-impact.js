@@ -1,8 +1,13 @@
 import React from "react"
+import Modal from "react-awesome-modal"
+
 import "../scss/style.scss"
 import "../scss/main.scss"
+
 import ScrollAnimation from "react-animate-on-scroll"
 import InternationalMap from "../images/map.png"
+
+import MapModal from "../components/map-modal"
 
 export default class InternationalImpact extends React.Component {
   constructor(props) {
@@ -15,8 +20,8 @@ export default class InternationalImpact extends React.Component {
     return (
       <div className="international-impact-section" id="international-impact">
         <ScrollAnimation animateIn="fadeIn" duration={1}>
-        <div className="row">
-          <div className="international-1 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div className="row">
+            <div className="international-1 col-xs-12 col-sm-12 col-md-12 col-lg-6">
               <div className="international-title">
                 <h1>International Impact</h1>
               </div>
@@ -36,26 +41,21 @@ export default class InternationalImpact extends React.Component {
                   As a result, this could incite federal action and regulation
                   for noncompliance of the treaty.
                 </p>
-                {/* <p>
-                  For decades, these waters have quenched the thirst and cooled
-                  the summer days of Val Verde County’s community, supported by
-                  eco-tourism and agriculture industries, and contributed to
-                  upwards of one third of the downstream flows to the Rio Grande
-                  - the primary water source for any communities south of Del
-                  Rio, Texas.
-                </p> */}
               </div>
-          </div>
+            </div>
 
-          <div className="international-2 text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 d-none d-md-block d-lg-block d-xl-block">
-              <img
-                src={InternationalMap}
-                alt="Map of the Edward & Trinity aquifer"
-                className="international-map-img"
-                id="international-map-mobile"
-              />
+            <div className="international-2 text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 d-none d-md-block d-lg-block d-xl-block">
+              <a href="../images/map.png" target="_blank">
+                <img
+                  src={InternationalMap}
+                  alt="Map of the Edward & Trinity aquifer"
+                  className="international-map-img"
+                  id="international-map-mobile"
+                />
+              </a>
+              <MapModal />
+            </div>
           </div>
-        </div>
         </ScrollAnimation>
       </div>
     )
