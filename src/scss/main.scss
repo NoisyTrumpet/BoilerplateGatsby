@@ -119,7 +119,6 @@
   // Components - Background, Regional Impact, International Impact, Ecological Impact, What Can Be Done? - desktop
 
   .components {
-
     h1 {
       font-family: $font-family-heading;
       color: $aqua;
@@ -212,6 +211,29 @@
         position: relative;
         top: -4rem;
         max-width: 70%;
+      }
+
+      // International map modal - desktop
+
+      .map-modal-section {
+        input {
+          background-color: $aqua;
+          color: white;
+          font-family: $font-family-base;
+          border: 1px solid $aqua;
+          border-radius: 5px;
+          padding: 1px 5px 2px 5px;
+        }
+
+        #modal-map-img {
+          position: relative;
+          top: 0;
+          left: 0;
+          z-index: 10000 !important;
+          // transform: translate3d(-50px, -400px, 10px);
+          height: 800px;
+          width: auto;
+        }
       }
 
       // Ecological section quote - desktop
@@ -521,7 +543,6 @@
         font-size: 1.65rem !important;
       }
 
-
       // H1 background styling - mobile
 
       .background-title,
@@ -543,6 +564,14 @@
         #international-map-mobile {
           max-width: 370px;
           text-align: center;
+        }
+      }
+
+      // Map modal - hide on mobile
+
+      .map-modal-section {
+        input { 
+          display: none;
         }
       }
 
@@ -657,7 +686,7 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    
+
     // Navbar - tablet
 
     .headroom-wrapper {
@@ -668,7 +697,7 @@
       padding: 5px 0 5px 0;
 
       .nav-item {
-        margin: .5rem;
+        margin: 0.5rem;
       }
 
       .nav-link {
@@ -716,7 +745,6 @@
           margin-left: 2px;
         }
       }
-      
     }
 
     // Hero section - tablet
@@ -764,33 +792,41 @@
 
       // International map positioning - tablet
 
-        .map-mobile {
-          .international-map-mobile, 
-          #international-map-mobile {
-            position: relative;
-            top: 1rem !important;
-            width: 410px !important;
-            max-height: auto;
-            padding: 10px;
-            margin: 20px auto !important;
-          }
-        }
-
-        // Image sizing - tablet
-
-        #background-one-img,
-        #background-two-img,
-        #regional-one-mobile,
-        #regional-two-mobile,
-        #ecological-one-mobile,
-        #ecological-two-mobile {
-          margin: 0 auto !important;
-          width: 550px;
-          max-width: 100%;
+      .map-mobile {
+        .international-map-mobile,
+        #international-map-mobile {
+          position: relative;
+          top: 1rem !important;
+          width: 410px !important;
           max-height: auto;
-          padding: 5px;
-          text-align: center !important;
+          padding: 10px;
+          margin: 20px auto !important;
         }
+      }
+
+      // Map modal - hide on tablet
+
+      .map-modal-section {
+        input { 
+          display: none;
+        }
+      }
+
+      // Image sizing - tablet
+
+      #background-one-img,
+      #background-two-img,
+      #regional-one-mobile,
+      #regional-two-mobile,
+      #ecological-one-mobile,
+      #ecological-two-mobile {
+        margin: 0 auto !important;
+        width: 550px;
+        max-width: 100%;
+        max-height: auto;
+        padding: 5px;
+        text-align: center !important;
+      }
 
       // Quotes/CTAs - tablet
 
@@ -903,8 +939,16 @@
 
         .international-map-img {
           position: relative;
-          top: .5rem;
+          top: 0.5rem;
           max-width: 450px !important;
+        }
+
+        // Map modal - hide on horizontal tablets
+
+        .map-modal-section {
+          input { 
+            display: none;
+          }
         }
 
         // Comanche Springs section - horizontal tablets
@@ -983,7 +1027,6 @@
 @media screen and (min-width: 901px) and (max-width: 991px) {
   .water-campaign-page {
     .components {
-
       // images sizing - 900-991px
       #background-one-img,
       #background-two-img,
@@ -1007,7 +1050,6 @@
           margin-bottom: 1rem;
         }
       }
-
     }
   }
 }
@@ -1016,44 +1058,43 @@
 
 @media screen and (min-width: 992px) and (max-width: 1023px) {
   .water-campaign-page {
-
     // Navbar for 992px - 1023px
     nav {
-     .nav-item {
-      margin: 0 1rem;
-      transition: ease-in 0.5s;
+      .nav-item {
+        margin: 0 1rem;
+        transition: ease-in 0.5s;
 
-      .nav-donate-btn {
-        background-color: $red;
-        color: white;
-        font-family: $font-family-base;
+        .nav-donate-btn {
+          background-color: $red;
+          color: white;
+          font-family: $font-family-base;
+          font-weight: 600;
+          border: 2px solid $red;
+          border-radius: 1px;
+          padding: 9px 15px 11px 15px;
+          box-shadow: 2px 1px 5px -1px #666666;
+          margin-bottom: 6rem;
+        }
+
+        .nav-donate-btn:hover {
+          background-color: $aqua !important;
+          border: 2px solid $aqua;
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .nav-link {
+        font-family: $font-family-base !important;
         font-weight: 600;
-        border: 2px solid $red;
-        border-radius: 1px;
-        padding: 9px 15px 11px 15px;
-        box-shadow: 2px 1px 5px -1px #666666;
-        margin-bottom: 6rem;
-      }
-
-      .nav-donate-btn:hover {
-        background-color: $aqua !important;
-        border: 2px solid $aqua;
         color: white;
-        text-decoration: none;
-      }
-    }
+        text-align: center;
+        padding: 0 13px 0 13px !important;
 
-    .nav-link {
-      font-family: $font-family-base !important;
-      font-weight: 600;
-      color: white;
-      text-align: center;
-      padding: 0 13px 0 13px !important;
-
-      &:hover {
-        color: $red;
+        &:hover {
+          color: $red;
+        }
       }
-    }
 
       #nav-logo {
         width: 110% !important;
@@ -1063,7 +1104,6 @@
     }
 
     .components {
-
       .background-section {
         .quote-922 {
           color: $aqua !important;
@@ -1077,7 +1117,6 @@
         max-width: 85%;
       }
     }
-
   }
 }
 
@@ -1085,40 +1124,40 @@
   .water-campaign-page {
     nav {
       .nav-item {
-      margin: 0 1.2rem;
-      transition: ease-in 0.5s;
+        margin: 0 1.2rem;
+        transition: ease-in 0.5s;
 
-      .nav-donate-btn {
-        background-color: $red;
-        color: white;
-        font-family: $font-family-base;
+        .nav-donate-btn {
+          background-color: $red;
+          color: white;
+          font-family: $font-family-base;
+          font-weight: 600;
+          border: 2px solid $red;
+          border-radius: 1px;
+          padding: 9px 15px 11px 15px;
+          box-shadow: 2px 1px 5px -1px #666666;
+          margin-bottom: 6rem;
+        }
+
+        .nav-donate-btn:hover {
+          background-color: $aqua !important;
+          border: 2px solid $aqua;
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .nav-link {
+        font-family: $font-family-base !important;
         font-weight: 600;
-        border: 2px solid $red;
-        border-radius: 1px;
-        padding: 9px 15px 11px 15px;
-        box-shadow: 2px 1px 5px -1px #666666;
-        margin-bottom: 6rem;
-      }
-
-      .nav-donate-btn:hover {
-        background-color: $aqua !important;
-        border: 2px solid $aqua;
         color: white;
-        text-decoration: none;
-      }
-    }
+        text-align: center;
+        padding: 0 13px 0 13px !important;
 
-    .nav-link {
-      font-family: $font-family-base !important;
-      font-weight: 600;
-      color: white;
-      text-align: center;
-      padding: 0 13px 0 13px !important;
-
-      &:hover {
-        color: $red;
+        &:hover {
+          color: $red;
+        }
       }
-    }
       .navbar-brand {
         #nav-logo {
           width: 50% !important;
