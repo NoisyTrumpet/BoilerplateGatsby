@@ -45,14 +45,12 @@ export default class InternationalImpact extends React.Component {
             </div>
 
             <div className="international-2 text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 d-none d-md-block d-lg-block d-xl-block">
-              <a href="../images/map.png" target="_blank">
                 <img
                   src={InternationalMap}
                   alt="Map of the Edward & Trinity aquifer"
                   className="international-map-img"
                   id="international-map-mobile"
                 />
-              </a>
               <MapModal />
             </div>
           </div>
