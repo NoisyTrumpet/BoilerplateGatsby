@@ -36,7 +36,7 @@ export default class MapModal extends React.Component {
           effect="fadeInUp"
           onClickAway={() => this.closeModal()}
         >
-          <img src={InternationalMap} id="modal-map-img" alt="Map of south Texas water sources" />
+          <img src={InternationalMap} id="modal-map-img" alt="Val Verde County Water Resources" />
         </Modal>
       </section>
     )
