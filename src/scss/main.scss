@@ -1165,5 +1165,84 @@
         }
       }
     }
+
+    // International map modal - 1113px 
+
+      .map-modal-section {
+        input {
+          background-color: $aqua;
+          color: white;
+          font-family: $font-family-base;
+          border: 1px solid $aqua;
+          border-radius: 5px;
+          padding: 1px 5px 2px 5px;
+        }
+
+        #modal-map-img {
+          position: relative;
+          top: 0;
+          left: 0;
+          z-index: 10000 !important;
+          // transform: translate3d(-50px, -400px, 10px);
+          height: 700px !important;
+          width: auto;
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  
+  .water-campaign-page {
+    
+    // International map modal - 2100px 
+
+      .map-modal-section {
+        input {
+          background-color: $aqua;
+          color: white;
+          font-family: $font-family-base;
+          border: 1px solid $aqua;
+          border-radius: 5px;
+          padding: 1px 5px 2px 5px;
+        }
+
+        #modal-map-img {
+          position: relative;
+          top: 0;
+          left: 0;
+          z-index: 10000 !important;
+          height: 995px !important;
+          width: auto;
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  
+  .water-campaign-page {
+
+    // International map modal - 2100px 
+
+      .map-modal-section {
+        input {
+          background-color: $aqua;
+          color: white;
+          font-family: $font-family-base;
+          border: 1px solid $aqua;
+          border-radius: 5px;
+          padding: 1px 5px 2px 5px;
+        }
+
+        #modal-map-img {
+          position: relative;
+          top: 0;
+          left: 0;
+          z-index: 10000 !important;
+          height: 1010px !important;
+          width: auto;
+        }
+      }
   }
 }
